@@ -25,3 +25,7 @@ Mantas [Github](https://github.com/MantasUrb)
 Gytautas [Github](https://github.com/Gytzum)
 Mindaugas [Github](https://github.com/minvaitekunas)
 Povilas [Github](https://github.com/bikmanas)
+Deimantė [Github](https://github.com/DeeBee123)
+
+
+
