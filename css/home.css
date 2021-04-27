@@ -7,5 +7,6 @@
 /* components */
 @import './components/header.css';
 @import './components/footer.css';
+@import './components/customerReviews.css';
 
 /* CUSTOM STYLE BELOW */
