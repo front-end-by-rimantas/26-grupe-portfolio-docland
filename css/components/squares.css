@@ -20,20 +20,16 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 1.78;
-
 }
 
 .container > .squares {
     display: grid;
     grid-template-columns: 160px 160px 160px 160px;
-
     column-gap: 30px;
     text-align: center;
     justify-content: center;
     font-size: 40px;
 }
-
-
 
 .container > .squares > .single-box1 {
     background-color: #DFF5FF;
@@ -48,8 +44,6 @@
     color: #F99C5E;
     padding: 50px;
     border-radius: 35px;
-
-   
 }
 
 .container > .squares > .single-box3 {
@@ -57,8 +51,6 @@
     color: #2DCEA5;
     padding: 50px;
     border-radius: 35px;
-
-
 }
 
 .container > .squares > .single-box4 {
@@ -66,8 +58,6 @@
     color: #0472FA;
     padding: 50px;
     border-radius: 20px;
-
-
 }
 
 
@@ -85,16 +75,15 @@
     }
 }
 
-
 @media (max-width: 768px) {
-    .container > .squares > [class*='single-box'] {
+.container > .squares > [class*='single-box'] {
     width: 80%;
     }
-    .container > .padding-squares {
+.container > .padding-squares {
         padding-top: 80px;
         padding-bottom: 50px;
     }
-    .container > .squares {
+.container > .squares {
     display: flex;
     align-items: center;
     justify-content: center;
