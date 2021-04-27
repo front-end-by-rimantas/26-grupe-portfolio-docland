@@ -78,8 +78,22 @@
     }
 }
 
+@media (max-width: 991px) {
+.container > .padding-squares {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    }
+}
+
+
 @media (max-width: 768px) {
-   
+    .container > .squares > [class*='single-box'] {
+    width: 80%;
+    }
+    .container > .padding-squares {
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
     .container > .squares {
     display: flex;
     align-items: center;
