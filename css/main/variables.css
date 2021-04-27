@@ -5,9 +5,13 @@
 /* Global variables */
 
 :root{
+    /* colors */
+    --color-transparent: transparent;
+    --color-light-blue: #5dd9c1;
+    --color-white: #fff;
+    
+    /* fonts */
     --font-family-primary:'Hind', sans-serif;
     --font-family-secondary:'Ubuntu', sans-serif;
     --font-size-46: 46px;
-    --color-transparent: transparent;
-    --color-light-blue: #5dd9c1;
 }

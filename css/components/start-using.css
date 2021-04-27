@@ -1,13 +1,12 @@
-@import "../main/variables.css";
 
 .start-using {
-  width: 100%;
-  text-align: center;
   background-color: #4e2fa9;
-  position: relative;
-  color: #fff;
+  color: var(--color-white);
   font-family: var(--font-family-primary);
   padding: 140px 0;
+  position: relative;
+  text-align: center;
+  width: 100%;
 }
 
 .start-using .decor-line {
@@ -24,16 +23,19 @@
 .decor-line.right {
   right: 40px;
 }
+
 .content-wrapper {
-  max-width: 1140px;
-  margin: auto;
   font-weight: 600;
   line-height: 1.2;
+  margin: auto;
+  max-width: 1140px;
 }
+
 .content-wrapper h2 {
   font-size: var(--font-size-46);
   font-weight: 600;
 }
+
 .content-wrapper,
 .buttons-wrapper {
   position: relative;
@@ -42,36 +44,39 @@
 .buttons-wrapper {
   margin-top: 44px;
 }
+
 .btn-global.free {
   margin-right: 20px;
 }
 
+
 .video-btn {
-  padding: 20px 33px;
   background-color: var(--color-transparent);
-  color: white;
   border: 1px solid var(--color-light-blue);
+  color: var(--color-white);
+  padding: 20px 33px;
 }
 
 .btn-global.video-btn:hover .play-icon path {
   fill: #fbf349;
 }
+
 .video-btn .play-icon {
   margin-right: 5px;
 }
 
 .youtube-modal {
+  align-items: center;
+  display: none;
+  flex-direction: column;
+  height: 75vh;
+  left: 50%;
   position: absolute;
   top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 100;
-  flex-direction: column;
-  align-items: center;
-  width: 70vw;
-  height: 75vh;
-  display: none;
   transition: all 0.5s;
+  width: 70vw;
+  z-index: 100;
 }
 
 .youtube-modal-open {
@@ -79,26 +84,25 @@
 }
 
 .youtube-modal .mfp-iframe {
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
 
 .youtube-modal .close-btn {
-  /* font-size: 24px; */
   align-self: flex-end;
   background-color: var(--color-transparent);
   border: none;
+  color: rgb(184, 184, 184);
+  cursor: pointer;
+  font-family: Arial, monospace;
+  font-size: 25px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: grey;
-  font-size: 25px;
   width: 25px;
-  font-family: Arial, Helvetica, sans-serif;
-  cursor: pointer;
 }
 
 .youtube-modal .close-btn:hover {
-  color: white;
+  color: rgb(231, 231, 231);
 }
 
 @media only screen and (max-width: 991px) {
@@ -111,13 +115,15 @@
   .content-wrapper h2 {
     font-size: 28px;
   }
+
   .buttons-wrapper {
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     padding: 0 15px;
   }
+
   .btn-global.free {
     margin: 0 0 10px;
   }
