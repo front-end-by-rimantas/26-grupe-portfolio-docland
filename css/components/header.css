@@ -1,23 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-
-li, a {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    cursor: pointer; 
-    text-decoration: none;
-    color: #fff;
-}
-
-button {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    cursor: pointer;
-    text-decoration: none;
-    color: #fff;
-    text-transform: capitalize;
-}
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@500&display=swap');
 
 header {
     width: 1410px;
@@ -30,14 +12,29 @@ header {
     margin: auto;
 }
 
+li, a, button {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    cursor: pointer; 
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.signup {
+    margin-left: 33px;
+    background-color: #fbf349;
+    color: #4e2fa9;
+    padding: 11px 38px;
+    border-radius: 6px;
+    font-size: 18px;
+    font-family: 'Hind', sans-serif;
+}
+
 .logo {
     cursor: pointer;
     margin-right: auto;
-}
-
-.nav-links {
-    list-style: none;
-    text-transform: capitalize;
 }
 
 .nav-links li {
