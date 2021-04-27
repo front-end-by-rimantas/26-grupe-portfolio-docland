@@ -6,9 +6,8 @@ body,
 body * {
   margin: 0;
   padding: 0;
-  /* vertical-align: top; */
+  vertical-align: top;
   box-sizing: border-box;
-  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
 }
 
 img {
@@ -20,19 +19,3 @@ a {
   text-decoration: none;
 }
 
-.btn-global {
-  position:relative;
-  padding: 20px 35px;
-  border-radius: 6px;
-  background-color: #fbf349;
-  font-size: 18px;
-  cursor: pointer;
-  border: none;
-  transition: all 0.4s;
-  opacity: 1;
-  /* z-index: 8; */
-}
-.btn-global:hover {
-  background-color: var(--color-light-blue);
-  color: white;
-}
