@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+li, a {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    cursor: pointer; 
+    text-decoration: none;
+    color: #fff;
+}
+
+button {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+header {
+    width: 1410px;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #4E2EA9;
+    padding: 0 15px;
+    margin: auto;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.nav-links {
+    list-style: none;
+    text-transform: capitalize;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0 24px;
+}
