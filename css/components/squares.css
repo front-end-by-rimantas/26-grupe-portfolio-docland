@@ -24,42 +24,46 @@
 
 .container > .squares {
     display: grid;
-    grid-template-columns: 160px 160px 160px 160px;
+    grid-template-columns: 200px 200px 200px 200px;
     column-gap: 30px;
     text-align: center;
     justify-content: center;
     font-size: 40px;
 }
 
+.container > .squares > .single-box1,
+.container > .squares > .single-box2,
+.container > .squares > .single-box3,
+.container > .squares > .single-box4{
+padding: 50px ;
+border-radius:35px;
+}
+
 .container > .squares > .single-box1 {
     background-color: #DFF5FF;
     color: #21BCFF;
-    padding: 50px;
-    border-radius: 35px;
- 
 }
 
 .container > .squares > .single-box2 {
     background-color: #FFF3EB;
     color: #F99C5E;
-    padding: 50px;
-    border-radius: 35px;
 }
 
 .container > .squares > .single-box3 {
     background-color: #DFFFF6;
     color: #2DCEA5;
-    padding: 50px;
-    border-radius: 35px;
 }
 
 .container > .squares > .single-box4 {
     background-color: #E9F3FF;
     color: #0472FA;
-    padding: 50px;
-    border-radius: 20px;
 }
 
+@media (max-width: 1500px) {
+    .container > .squares {
+    grid-template-columns: 160px 160px 160px 160px; 
+    }
+}
 
 @media (max-width: 1200px) {
     .container > .squares {
