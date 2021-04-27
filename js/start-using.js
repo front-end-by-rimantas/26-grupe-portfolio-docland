@@ -1,8 +1,10 @@
-const btnVideo = document.querySelector(".start-using .video-btn")
+const btnVideo = document.querySelector(".start-using .video-btn");
+const youtubeModal = document.querySelector(".youtube-modal");
+const closeBtn = document.querySelector(".youtube-modal .close-btn");
 
-
-const openVideo = ()=> {
-    console.log(btnVideo)
+const toggleOpenVideo = ()=> {
+    youtubeModal.classList.toggle("youtube-modal-open")
 }
 
-btnVideo.addEventListener('click', openVideo)
+btnVideo.addEventListener('click', toggleOpenVideo);
+closeBtn.addEventListener('click', toggleOpenVideo);
