@@ -8,10 +8,9 @@ header {
     justify-content: flex-end;
     align-items: center;
     background-color: #4E2EA9;
-    padding: 0 15px;
     margin: auto;
+    padding: 0 15px;
 }
-
 li, a, button {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
@@ -21,7 +20,6 @@ li, a, button {
     color: #fff;
     text-transform: capitalize;
 }
-
 .signup {
     margin-left: 33px;
     background-color: #fbf349;
@@ -31,13 +29,45 @@ li, a, button {
     font-size: 18px;
     font-family: 'Hind', sans-serif;
 }
-
 .logo {
     cursor: pointer;
     margin-right: auto;
 }
-
 .nav-links li {
     display: inline-block;
     padding: 0 24px;
+    height: 100%;
+}
+@media (min-width: 0px) {
+    header {
+         width: 100%
+     }
+ }
+@media (max-width: 992px) {
+    .nav-links, .signup {
+        display: none;
+    }
+}
+@media (min-width: 992px) {
+    header {
+        width: 960px;
+        padding: 0;
+    }
+    .nav-links li {
+        padding-left: 0;
+        padding-right: 10px;
+    }
+}
+@media (min-width: 1200px) {
+    header {
+        width: 1140px;
+    }
+    .nav-links li {
+    padding: 0 24px;
+    }
+}
+@media (min-width: 1500px) {
+   header {
+        width: 1410px;
+    }
 }
