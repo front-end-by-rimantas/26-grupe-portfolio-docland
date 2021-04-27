@@ -8,6 +8,7 @@
 /* components */
 @import './components/header.css';
 @import './components/footer.css';
+@import './components//squares.css';
 @import './components/start-using.css';
 
 /* CUSTOM STYLE BELOW */
