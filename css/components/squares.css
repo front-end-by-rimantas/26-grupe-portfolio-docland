@@ -92,5 +92,16 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
     }
+}
+
+.container.animate > .squares > .box {
+    animation-name: appears;
+    animation-duration: 3s;
+}
+
+@keyframes appears {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
