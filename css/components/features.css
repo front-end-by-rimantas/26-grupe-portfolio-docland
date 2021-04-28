@@ -9,12 +9,11 @@ h2 {
 }
 
 .features {
-    /* position: relative; */
+    position: relative;
     width: 1380px;
     margin: auto;
-    margin-top: 100px; //atitinkamai pakeisti pagal virsuje esanti sectiona
-    margin-bottom: 80px; //atitinkamai pakeisti pagal apacioje esanti sectiona
-    
+    margin-top: 100px; 
+    margin-bottom: 100px; 
 }
 
 .features > .features-boxes {
