@@ -1,5 +1,6 @@
+
 .background-container{
-    background-image: url(./hero-bg.jpg);
+    background-image: url('/img/hero-bg.jpg');
     background-repeat: no-repeat;
     background-position: bottom left;
     height: 95vh;
@@ -55,7 +56,7 @@
     margin-top: 30px;
 }
 
-.hero-container >  .hero-column > .buttons-hero >.button-hero:first-of-type {
+.hero-column > .buttons-hero >.button-hero:first-of-type {
     background: #5dd9c1;
     display: inline-block;
     border-radius: 6px;
@@ -66,45 +67,43 @@
     border: 1px solid transparent;
     font-weight: bold;
 }
-.hero-container >  .hero-column > .buttons-hero >.button-hero:last-of-type {
+.hero-column > .buttons-hero >.button-hero:last-of-type {
     display: inline-block;
-    margin-top: 10px;
-    padding: 1px;
     margin-left: 20px;
-    /* border-bottom: #fff solid 2px; */
     font-size: 20px;
+    margin-top: 15px;
     cursor: pointer;
     color: #fff;
+    position: relative;
 }
-.hero-container >  .hero-column > .buttons-hero
- >.button-hero:first-of-type:hover{
-     background-color: white;
-     color: #4e2fa9;
-    transition: 0.5s;
+.hero-column > .buttons-hero >.button-hero:first-of-type:hover{
+    background-color: #fff;
+    color: #4e2fa9;
  }
-.buttons-hero
- >.button-hero:last-of-type::after {
+/*  underline animation  */
+
+.hero-column > .buttons-hero >.button-hero:last-of-type::after{
     content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #fff;
-    transition: width .3s;
-}
- .buttons-hero >.button-hero:last-of-type:hover:after {
+    position: absolute;
     width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+
+}
+.hero-column > .buttons-hero >.button-hero:last-of-type:hover:after{
+    transform: scaleX(1);
+    transition: transform 0.25s forward;
 }
 
-.hero-container> .hero-right{
-    width: 60%;
-    padding-left: 60px;
-    margin-top: 100px;
-}
 .hero-container > .hero-right > .hero-img{
-    width:100%;
+    width:95%;
     height: auto;
     float: right;
-    /* transform: translateX(30px); */
     animation: fade-left;
     animation-delay: 0.4s;
     animation-duration: 1s;
@@ -121,10 +120,9 @@
         transform: translateX(0);
     }  
 }
+
 @media (max-width:1200px){
-    .hero-container > .hero-column > .hero-header{
-        font-size: 50px;
-    }
+
     .hero-container > .hero-column{
         font-size: 30px ;
     }
@@ -150,7 +148,6 @@
         margin-top: 100px;
         padding:0;
     }
-
     .hero-container > .hero-right > .hero-img{
         width:100%;
         margin-top: 50px;
@@ -160,7 +157,7 @@
         width: 100%;
     }
     .hero-container > .hero-column{
-        width: 85%;
+        width: 100%;
     }
 }
 
