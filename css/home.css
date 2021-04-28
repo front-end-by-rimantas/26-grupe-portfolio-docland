@@ -2,10 +2,13 @@
 @import './main/reset.css';
 @import './main/variables.css';
 @import './main/layout.css';
+@import './main/global-elements.css';
 /* 3rd-party */
 @import './3rd-party/font-awesome.min.css';
 /* components */
 @import './components/header.css';
 @import './components/footer.css';
+@import './components//squares.css';
+@import './components/start-using.css';
 
 /* CUSTOM STYLE BELOW */
