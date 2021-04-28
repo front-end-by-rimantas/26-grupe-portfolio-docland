@@ -1,3 +1,62 @@
-.main-container{
-    display: inline-block;
-}
+.main-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    line-height: 1.78;
+    color: #707070;
+    /* font-family: var(--font-family-primary); sita eilute bus reikalinga kai parsipulinsi is develop */
+  }
+  
+  .customize-img,
+  .customize {
+    max-width: 40%;
+  }
+  
+  .customize-img {
+    position: relative;
+  }
+  
+  .customize-img img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .customize-img .bg-img {
+    position: absolute;
+    background-color: #857dfb;
+    top: 30px;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .customize .customize-title {
+    margin-bottom: 10px;
+    font-size: 40px;
+    color: black;
+  }
+  .customize .title-description {
+    font-size: 20px;
+  }
+  
+  .customize {
+    padding: 0 15px;
+    margin-right: 20px;
+  }
+  
+  @media only screen and (max-width: 991px) {
+    .main-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .customize-img {
+      max-width: 100%;
+    }
+    .customize {
+      max-width: 80%;
+      margin: 50px auto 0;
+    }
+  }
