@@ -6,8 +6,9 @@
 // HERO START
 // HERO END
 
-    import './components/squares.js'
-
+import { squares } from './components/squares.js'
+import { squaresData } from './data/squaresData.js'
+squares('.squares', squaresData);
 // CUSTOMIZATION START
 // CUSTOMIZATION END
 

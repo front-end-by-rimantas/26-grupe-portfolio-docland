@@ -1,24 +1,18 @@
-// // 2. scroll stebejimas, kai pasirodo elementas ekrane
-
-const squaresDOM = document.querySelectorAll('.box');
-console.log(squaresDOM);
-for (const squaresDOM of squaresDOM) {
-    addEventListener('scroll', () => {
-        const elementTop = squaresDOM.offsetTop;
-        const elementHeight = squaresDOM.clientHeight;
-
-        const isVisible = scrollY + innerHeight >= elementTop + elementHeight;
-
-        if (isVisible) {
-            squaresDOM.classList.add('animate');
-        }
-    })
+function squares (selector, data) {
+    const DOM = document.querySelector(selector);
+    let HTML = '';
+    console.log(DOM);
+    for (let i = 0; i < data.length; i++) {
+        const info = data[i]
+        HTML += `<div class="single-box${i + 1} box">
+        <h2>${info.number}</h2>
+        <p>${info.label}</p>
+      </div>`;
+ 
+    }
+    DOM.innerHTML += HTML; 
 }
 
 
 
-
-
-
-
-
+export { squares }
