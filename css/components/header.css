@@ -2,8 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@500&display=swap');
 
 header {
+    min-height: 100px;
+    background-color: #4E2EA9;
+    width: 100vh;
+}
+
+nav {
     width: 1410px;
-    height: 100px;
+    min-height: 100px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -11,7 +17,8 @@ header {
     margin: auto;
     padding: 0 15px;
 }
-li, a, button {
+
+li, a{
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
     font-size: 20px;
@@ -20,14 +27,11 @@ li, a, button {
     color: #fff;
     text-transform: capitalize;
 }
-.signup {
-    margin-left: 33px;
-    background-color: #fbf349;
-    color: #4e2fa9;
-    padding: 11px 38px;
-    border-radius: 6px;
-    font-size: 18px;
-    font-family: 'Hind', sans-serif;
+.home {        
+    color: #5dd9c1;
+}
+li > a:hover {
+    color: #5dd9c1
 }
 .logo {
     cursor: pointer;
@@ -49,17 +53,17 @@ li, a, button {
     }
 }
 @media (min-width: 992px) {
-    header {
+    nav {
         width: 960px;
         padding: 0;
     }
     .nav-links li {
         padding-left: 0;
-        padding-right: 10px;
+        padding-right: 15px;
     }
 }
 @media (min-width: 1200px) {
-    header {
+    nav {
         width: 1140px;
     }
     .nav-links li {
@@ -67,7 +71,7 @@ li, a, button {
     }
 }
 @media (min-width: 1500px) {
-   header {
+   nav {
         width: 1410px;
     }
 }
