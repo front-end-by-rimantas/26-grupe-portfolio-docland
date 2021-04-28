@@ -1,5 +1,5 @@
 .container {
- width: 100%;
+    width: 100%;
 }
 
 .container > .padding-squares {
@@ -35,8 +35,8 @@
 .container > .squares > .single-box2,
 .container > .squares > .single-box3,
 .container > .squares > .single-box4{
-padding: 50px ;
-border-radius:35px;
+    padding: 50px ;
+    border-radius:35px;
 }
 
 .container > .squares > .single-box1 {
