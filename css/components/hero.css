@@ -67,7 +67,7 @@
     opacity: 1;
     font-weight:500;
   }
-  .btn-global:hover {
+  .buttons-hero > .btn-global:hover {
     background-color: #fff;
     color: #4e2fa9;
   }
