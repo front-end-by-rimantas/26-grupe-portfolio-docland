@@ -1,0 +1,125 @@
+h2 {
+    font-family: var(--font-family-primary);
+    font-size: 46px;
+    font-weight: 600;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    line-height: 1.25;
+    text-align: center;
+}
+
+.features {
+    /* position: relative; */
+    width: 1380px;
+    margin: auto;
+    margin-top: 100px; //atitinkamai pakeisti pagal virsuje esanti sectiona
+    margin-bottom: 80px; //atitinkamai pakeisti pagal apacioje esanti sectiona
+    
+}
+
+.features > .features-boxes {
+    background-color: #4e2fa9;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+    row-gap: 70px;
+    column-gap: 40px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-radius: 20px;
+}
+
+.features h3 {
+    font-family: var(--font-family-primary);
+    font-weight: 500;
+    font-size: 26px;
+    margin-top: 28px;
+    color: white;
+}
+.features-box1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.features-box1 > i {
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border-radius: 10px;
+    background-image: url("/svg/pf1.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.features-box2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.features-box2 > i {
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border-radius: 10px;
+    background-image: url("/svg/pf2.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.features-box3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.features-box3 > i {
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border-radius: 10px;
+    background-image: url("/svg/pf3.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.features-box4 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.features-box4 > i {
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border-radius: 10px;
+    background-image: url("/svg/pf4.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.features-box5 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.features-box5 > i {
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border-radius: 10px;
+    background-image: url("/svg/pf5.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.features-box6 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.features-box6 > i {
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border-radius: 10px;
+    background-image: url("/svg/pf6.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
