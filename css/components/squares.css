@@ -1,5 +1,6 @@
 .container {
     width: 100%;
+    font-family: var(--font-family-primary);
 }
 
 .container > .padding-squares {
@@ -37,6 +38,7 @@
 .container > .squares > .single-box4{
     padding: 50px ;
     border-radius:35px;
+    opacity: 0;
 }
 
 .container > .squares > .single-box1 {
@@ -97,11 +99,14 @@
 }
 
 .container > .squares > .box.animate {
-    animation-name: appears;
-    animation-duration: 3s;
+ animation: appears 3s linear forwards;
 }
 
 @keyframes appears {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+    0% {opacity: 0; 
+    transform: translateY(30px);
+    }
+    100% {opacity: 1;
+    transform: translateY(0px);
+    }
 }
