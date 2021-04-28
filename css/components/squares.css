@@ -96,7 +96,7 @@
     }
 }
 
-.container.animate > .squares > .box {
+.container > .squares > .box.animate {
     animation-name: appears;
     animation-duration: 3s;
 }
