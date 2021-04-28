@@ -1,4 +1,5 @@
 .background-container{
+    background-color: var(--color-light-blue);
     background-image: url('../../img/hero-bg.jpg');
     background-repeat: no-repeat;
     background-size: auto;
@@ -8,6 +9,7 @@
     height: auto;    
 }
 .hero-container {
+    font-family: var(--font-family-primary);
     display: flex;
     justify-content: center;
     margin:auto;
@@ -57,7 +59,7 @@
     background: #5dd9c1;
     display: inline-block;
     border-radius: 6px;
-    padding: 15px 33px;
+    padding: 10px 33px;
     font-size: 18px;
     cursor: pointer;
     color: #fff;
@@ -68,7 +70,7 @@
     display: inline-block;
     margin-left: 20px;
     font-size: 20px;
-    margin-top: 15px;
+    margin-top: 12px;
     cursor: pointer;
     color: #fff;
     position: relative;
@@ -130,6 +132,7 @@
         width:530px;
         height: 508px;
         height: 100%;
+        margin-top:50px
     }
 }
 @media (max-width:992px){
