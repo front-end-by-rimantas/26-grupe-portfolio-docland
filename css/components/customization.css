@@ -54,7 +54,7 @@
     background-color: #857dfb;
     top: 30px;
     left: 0;
-    width: 80%;
+    width: 40%;
     height: 100%;
     z-index: -1;
   }
@@ -63,7 +63,7 @@
     position: absolute;
     top: 30px;
     right: 0;
-    width: 90%;
+    width: 80%;
     height: 100%;
     z-index: -1;
   }
@@ -115,6 +115,21 @@
       max-width: 100%;
     }
     .customize, .customize-second {
+      max-width: 80%;
+      margin: 50px auto 0;
+    }
+  }
+
+  @media only screen and (max-width: 991px) {
+    .second-container {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    .customize-img-second {
+      max-width: 100%;
+    }
+    .customize-second {
       max-width: 80%;
       margin: 50px auto 0;
     }
