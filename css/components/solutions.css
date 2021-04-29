@@ -7,18 +7,17 @@
 }
 .solution-container > h2 {
     font-size: var(--font-size-46);
-    margin-bottom: 100px;
+    font-weight: 600;
+    margin-bottom: 50px;
 }
 .solution > .solution-container {
     display: inline-block;
-    /* background-color: aquamarine; */
 }
-
 .solution-container > .box-container{
     display: grid;
     justify-items: center;
     grid-template-columns:1fr 1fr ;
-    background-color:chocolate ;
+    /* background-color:chocolate ; */
     gap: 30px;
     width: 1410px;
 }
@@ -40,11 +39,28 @@
     font-size: 24px;
     color: #292929;
     font-weight: 500;
-    
 }
 .solution-box > .solution-paragraph {
     display: inline-block;
     font-size: 16px;
     width: 70%;
     color: #707070;    
+}
+.solution-box > .logo-box {
+    display: inline-block;
+    float: left;
+    width: 80px;
+    height: 80px;
+    background-color: violet;
+    margin-right: 30px;
+    border-radius: 10px;
+    margin-top: 5px;
+    position: relative;
+}
+.logo-box > .solution-logo {
+    font-size: 40px;    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
