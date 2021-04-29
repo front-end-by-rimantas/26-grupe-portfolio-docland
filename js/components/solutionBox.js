@@ -18,7 +18,7 @@ function solutionBox(selector, data){
     solutionDOM.innerHTML += HTML;
 
     const solutionBoxDOM = solutionDOM.querySelectorAll('.solution-box');
-    const logoDOM = solutionDOM.querySelectorAll('.logo-box')
+    const logoDOM = solutionDOM.querySelectorAll('.solution-logo')
     console.log(solutionBoxDOM);
 
     for (let i = 0; i < logoDOM.length; i++) {
@@ -26,7 +26,7 @@ function solutionBox(selector, data){
         logoDOM[i].style ="transition: 0.7s ; transform: rotate(15deg);"           
         })
         solutionBoxDOM[i].addEventListener('mouseout', ()=>{
-            logoDOM[i].style ="transition: 0.7s ; transform: rotate(0); background-color: red;"               
+            logoDOM[i].style ="transition: 0.7s ; transform: rotate(0);"               
          })      
     }
 }
