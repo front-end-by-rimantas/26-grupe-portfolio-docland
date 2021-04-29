@@ -2,9 +2,8 @@
     background-color: var(--color-light-blue);
     background-image: url('../../img/hero-bg.jpg');
     background-repeat: no-repeat;
-    background-size: auto;
-    background-position: bottom left;
-    background-attachment:fixed;
+    background-size:cover;
+    background-position:bottom left;
     width: 100%;
     height: auto;    
 }
@@ -14,7 +13,6 @@
     justify-content: center;
     margin:auto;
     width: 1410px;
-    
 }
 .hero-container > .hero-column{
     width: 40%;
