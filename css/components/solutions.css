@@ -1,0 +1,38 @@
+.solution{
+    font-family: var(--font-family-primary);
+    padding: 140px 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.solution-container > h2 {
+    font-size: var(--font-size-46);
+    margin-bottom: 100px;
+}
+.solution > .solution-container {
+    display: inline-block;
+    background-color: aquamarine;
+}
+
+.solution-container > .box-container{
+    display: grid;
+    justify-items: center;
+    grid-template-columns:1fr 1fr ;
+    background-color:chocolate ;
+    gap: 30px;
+    width: 1410px;
+    height: 476px;
+    
+}
+.box-container > .solution-box {
+    width: 100%;
+    height: 100%;
+    background-color: darkcyan;
+}
+
+.solution-box > .solution-header {
+    font-size: 24px;
+}
+.solution-box > .solution-paragraph {
+    font-size: 16px;
+}
