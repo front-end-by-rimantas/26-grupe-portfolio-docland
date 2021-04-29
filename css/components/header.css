@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@500&display=swap');
+
+header {
+    min-height: 100px;
+    background-color: #4E2EA9;
+    width: 100vh;
+}
+
+nav {
+    width: 1410px;
+    min-height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #4E2EA9;
+    margin: auto;
+    padding: 0 15px;
+}
+
+li, a{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    cursor: pointer; 
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+}
+.home {        
+    color: #5dd9c1;
+}
+li > a:hover {
+    color: #5dd9c1
+}
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+.nav-links li {
+    display: inline-block;
+    padding: 0 24px;
+    height: 100%;
+}
+.button {
+    padding: 15px 33px;
+    color: #4E2EA9;
+}
+
+@media (min-width: 0px) {
+    header {
+         width: 100%
+     }
+ }
+@media (max-width: 992px) {
+    .nav-links, .signup {
+        display: none;
+    }
+}
+@media (min-width: 992px) {
+    nav {
+        width: 960px;
+        padding: 0;
+    }
+    .nav-links li {
+        padding-left: 0;
+        padding-right: 15px;
+    }
+}
+@media (min-width: 1200px) {
+    nav {
+        width: 1140px;
+    }
+    .nav-links li {
+    padding: 0 24px;
+    }
+}
+@media (min-width: 1500px) {
+   nav {
+        width: 1410px;
+    }
+}
