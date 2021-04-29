@@ -43,7 +43,7 @@
     float: right;
   }
 
-  .customize-img-second img{
+  .customize-img-second{
     max-width: 100%;
     height: auto;
     float: left;
@@ -63,7 +63,7 @@
     position: absolute;
     top: 30px;
     right: 0;
-    width: 80%;
+    width: 90%;
     height: 100%;
     z-index: -1;
   }
@@ -92,13 +92,13 @@
   }
 
 
-  .check-text-1{
+  /* .check-text-1{
     color: black;
   }
   .check-text-1{
     font-size: 20px;
     width: 80%; 
-  }
+  } */
   
   .customize, .customize-second {
     padding: 0 15px;
