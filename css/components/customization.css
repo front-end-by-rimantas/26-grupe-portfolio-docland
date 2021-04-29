@@ -37,21 +37,14 @@
   .customize-img-second {
     position: relative;
   }
-  .drag-text {
+  .check {
     display: flex;
+    
   }
-
-  .drag-text .fa-check {
+  
+  .check .fa-check {
     color: salmon;
     margin: 10px 10px 0 0;
-  }
-  .live-text{
-    display: flex;
-  }
-  .live-text .fa-check {
-    color: salmon;
-    margin: 10px 10px 0 0;
-    flex-direction: column;
   }
 
 
