@@ -37,88 +37,34 @@ h2 {
     margin-top: 28px;
     color: white;
 }
-.features-box1 {
+.features-box {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.features-box1 > i {
+.features-box > i {
     width: 120px;
     height: 120px;
     background-color: white;
     border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.features-box > .i1 {
     background-image: url("/svg/pf1.svg");
-    background-repeat: no-repeat;
-    background-position: center;
 }
-.features-box2 {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.features-box2 > i {
-    width: 120px;
-    height: 120px;
-    background-color: white;
-    border-radius: 10px;
+.features-box > .i2 {
     background-image: url("/svg/pf2.svg");
-    background-repeat: no-repeat;
-    background-position: center;
 }
-.features-box3 {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.features-box3 > i {
-    width: 120px;
-    height: 120px;
-    background-color: white;
-    border-radius: 10px;
+.features-box > .i3 {
     background-image: url("/svg/pf3.svg");
-    background-repeat: no-repeat;
-    background-position: center;
 }
-.features-box4 {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.features-box4 > i {
-    width: 120px;
-    height: 120px;
-    background-color: white;
-    border-radius: 10px;
+.features-box > .i4 {
     background-image: url("/svg/pf4.svg");
-    background-repeat: no-repeat;
-    background-position: center;
 }
-
-.features-box5 {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.features-box5 > i {
-    width: 120px;
-    height: 120px;
-    background-color: white;
-    border-radius: 10px;
+.features-box > .i5 {
     background-image: url("/svg/pf5.svg");
-    background-repeat: no-repeat;
-    background-position: center;
 }
-.features-box6 {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.features-box6 > i {
-    width: 120px;
-    height: 120px;
-    background-color: white;
-    border-radius: 10px;
+.features-box > .i6 {
     background-image: url("/svg/pf6.svg");
-    background-repeat: no-repeat;
-    background-position: center;
 }
