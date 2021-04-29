@@ -19,20 +19,9 @@
     color: #707070;
     font-family: var(--font-family-primary);
   }
-
-  .third-container {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 20px;
-    line-height: 1.78;
-    color: #707070;
-    font-family: var(--font-family-primary);
-  }
   
   .customize-img,
-  .customize, .customize-img-third {
+  .customize{
     width: 45%;
   }
 
@@ -41,13 +30,31 @@
     width: 45%;
   }
 
-  .customize-img, .customize-img-third{
+  .customize-img{
     position: relative;
   }
   
   .customize-img-second {
     position: relative;
   }
+  .drag-text {
+    display: flex;
+  }
+
+  .drag-text .fa-check {
+    color: salmon;
+    margin: 10px 10px 0 0;
+  }
+  .live-text{
+    display: flex;
+  }
+  .live-text .fa-check {
+    color: salmon;
+    margin: 10px 10px 0 0;
+    flex-direction: column;
+  }
+
+
   
   .customize-img img {
     max-width: 100%;
@@ -59,11 +66,6 @@
     max-width: 100%;
     height: auto;
     float: left;
-  }
-  .customize-img-third{
-    max-width: 100%;
-    height: auto;
-    float: right;
   }
   
   .customize-img .bg-img {
@@ -84,7 +86,7 @@
     height: 100%;
     z-index: -1;
   }
- .customize .customize-title {
+ .customize .customize-title{
     font-size: 36px;
     color: black;
     max-width: 80%;
@@ -96,24 +98,18 @@
     color: black;
     width: 80%;
     word-wrap: break-word;
-    float: right;
+    /* float: right; */
   }
 
-  .customize-third .customize-third-title{
-    font-size: 36px;
-    color: black;
-    max-width: 80%;
-    word-wrap: break-word;
-  }
   .customize .title-description {
     color: black;
     font-size: 20px;
     max-width: 500px;
   }
 
-  a{
+  /* a{
     color: black;
-  }
+  } */
 
   .check-text-1, .check-text-2{
     color: black;
@@ -137,21 +133,21 @@
   }
   
   @media (max-width: 991px) {
-    .main-container, .second-container, .third-container {
+    .main-container, .second-container{
       flex-direction: column;
       align-items: flex-start;
     }
 
-    .customize-img, .customize-img-second, .third.container {
+    .customize-img, .customize-img-second{
       max-width: 100%;
     }
-    .customize, .customize-second, .customize-third {
+    .customize, .customize-second{
       max-width: 80%;
       margin: 50px auto 0;
     }
   }
   @media (max-width: 768px) {
-    .main-container, .second-container, .customize-third {
+    .main-container, .second-container{
       flex-direction: column;
       align-items: flex-start;
     }
