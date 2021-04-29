@@ -1,14 +1,14 @@
 // COMPONENTS AND DATA IMPORT
 
-// HEADER START
+// /*HEADER START
 // HEADER END
 
 // HERO START
 // HERO END
 
-// INFO SQUARES START
-// INFO SQUARES END
-
+import { squares } from './components/squares.js'
+import { squaresData } from './data/squaresData.js'
+squares('.squares', squaresData);
 // CUSTOMIZATION START
 // CUSTOMIZATION END
 
@@ -20,6 +20,7 @@
 
 // SOLUTIONS START
 // SOLUTIONS END
+
 
 
 import './start-using.js'
