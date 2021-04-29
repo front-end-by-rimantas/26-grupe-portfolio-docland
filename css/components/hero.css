@@ -1,7 +1,7 @@
 .background-container{
     background-color: var(--color-light-blue);
     background-image: url('../../img/hero-bg.jpg');
-    background-repeat:repeat;
+    background-repeat: no-repeat;
     background-size:cover;
     background-position:bottom;
     width: 100%;
