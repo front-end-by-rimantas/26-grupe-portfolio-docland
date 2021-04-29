@@ -42,6 +42,11 @@ li > a:hover {
     padding: 0 24px;
     height: 100%;
 }
+.button {
+    padding: 15px 33px;
+    color: #4E2EA9;
+}
+
 @media (min-width: 0px) {
     header {
          width: 100%
