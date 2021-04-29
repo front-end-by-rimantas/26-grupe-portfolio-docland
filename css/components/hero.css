@@ -2,9 +2,8 @@
     background-color: var(--color-light-blue);
     background-image: url('../../img/hero-bg.jpg');
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size:cover;
     background-position: bottom left;
-    background-attachment:fixed;
     width: 100%;
     height: auto;    
 }
