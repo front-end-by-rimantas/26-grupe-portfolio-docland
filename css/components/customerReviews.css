@@ -1,13 +1,15 @@
-.container .customer-review > row {
+.container .customer-review {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 .container customer-review-cards {
+    flex-wrap: wrap;
     width: 90%;
     justify-content: center;
 }
 .customer-review-card {
+    flex-wrap: wrap;
     padding: 40px 40px;
     background-color: #fff;
     border-radius: 20px;
@@ -68,6 +70,7 @@
 /* inverted customer card style */
 
 .customer-review-inverted-card{
+    
     padding: 40px 40px;
     background-color: var(--color-secondary);
     border-radius: 20px;
