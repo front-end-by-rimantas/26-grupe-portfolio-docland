@@ -66,4 +66,9 @@
     height: 50%;
 }
 
+.solution-logo >.logo-rotate{
+    transition: 0.7s linear;
+    transform: rotate(20deg);
+}
+
 

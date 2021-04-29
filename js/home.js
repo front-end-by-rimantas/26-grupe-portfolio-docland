@@ -10,7 +10,7 @@ import { squares } from './components/squares.js'
 import { solutionData } from './data/solutionData.js';
 import { squaresData } from './data/squaresData.js'
 squares('.squares', squaresData);
-import {solutionBox} from './components/solutionBox.js'
+import { solutionBox} from './components/solutionBox.js'
 // CUSTOMIZATION START
 // CUSTOMIZATION END
 
@@ -21,7 +21,8 @@ import {solutionBox} from './components/solutionBox.js'
 // PRODUCT RATING REVIEWS END
 
 // SOLUTIONS START
-solutionBox('.box-container', solutionData)
+
+solutionBox('.box-container', solutionData);
 // SOLUTIONS END
 
 
