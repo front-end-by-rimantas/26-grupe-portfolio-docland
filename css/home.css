@@ -8,7 +8,8 @@
 /* components */
 @import './components/header.css';
 @import './components/footer.css';
-@import './components//squares.css';
+@import './components/hero.css';
+@import './components/squares.css';
 @import './components/start-using.css';
 @import './components/features.css';
 

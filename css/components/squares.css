@@ -1,5 +1,6 @@
 .container {
- width: 100%;
+    width: 100%;
+    font-family: var(--font-family-primary);
 }
 
 .container > .padding-squares {
@@ -35,8 +36,9 @@
 .container > .squares > .single-box2,
 .container > .squares > .single-box3,
 .container > .squares > .single-box4{
-padding: 50px ;
-border-radius:35px;
+    padding: 50px ;
+    border-radius:35px;
+    opacity: 0;
 }
 
 .container > .squares > .single-box1 {
@@ -47,6 +49,7 @@ border-radius:35px;
 .container > .squares > .single-box2 {
     background-color: #FFF3EB;
     color: #F99C5E;
+    animation-delay: 3s;
 }
 
 .container > .squares > .single-box3 {
@@ -80,6 +83,7 @@ border-radius:35px;
 }
 
 @media (max-width: 768px) {
+
 .container > .squares > [class*='single-box'] {
     width: 80%;
     }
@@ -92,5 +96,31 @@ border-radius:35px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
+    }
+}
+
+.container > .squares > .single-box1.box.animate {
+    animation: appears 1s linear 0.1s forwards;
+    }
+
+.container > .squares > .single-box2.box.animate {
+    animation: appears 1s linear 0.3s forwards;
+    }
+
+.container > .squares > .single-box3.box.animate {
+    animation: appears 1s linear 0.5s forwards;
+    }
+
+.container > .squares > .single-box4.box.animate {
+    animation: appears 1s linear 0.7s forwards;
+    }
+
+@keyframes appears {
+    0% {opacity: 0; 
+    transform: translateY(30px);
+    }
+    100% {opacity: 1;
+    transform: translateY(0px);
     }
 }

@@ -14,3 +14,21 @@
     background-color: var(--color-light-blue);
     color: white;
   }
+
+  
+  .global-fade-animation{     /*this setting fades from left to right */
+    animation: fade;
+    animation-delay: 0.8s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes fade-right {
+    0%{
+        transform: translateX(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    } 
+}
