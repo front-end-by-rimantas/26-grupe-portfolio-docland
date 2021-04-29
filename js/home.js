@@ -21,7 +21,7 @@ import {solutionBox} from './components/solutionBox.js'
 // PRODUCT RATING REVIEWS END
 
 // SOLUTIONS START
-solutionBox('.solution-container', solutionData)
+solutionBox('.box-container', solutionData)
 // SOLUTIONS END
 
 

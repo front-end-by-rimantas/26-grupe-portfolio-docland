@@ -17,7 +17,7 @@
     display: grid;
     justify-items: center;
     grid-template-columns:1fr 1fr ;
-    /* background-color:chocolate ; */
+    background-color:chocolate ;
     gap: 30px;
     width: 1410px;
 }

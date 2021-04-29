@@ -16,9 +16,9 @@ const solutionData = [
     },
     {
     logoName: `fa fa-globe`,
-    logoBg: `#F2A29E`,
+    logoBg: `#DFFFF6`,
     logoColor: `#2DCEA5`,
-    headerext: `Related Product`,
+    headerText: `Related Product`,
     paraText: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis risus mi. Ut placerat qa lectus.`
     },
     {
