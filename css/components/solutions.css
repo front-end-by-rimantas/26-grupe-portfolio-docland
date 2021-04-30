@@ -9,7 +9,6 @@
     font-size: var(--font-size-46);
     font-weight: 600;
     margin-bottom: 50px;
-
 }
 .solution > .solution-container {
     display: inline-block;
@@ -40,6 +39,7 @@
     font-size: 24px;
     color: #292929;
     font-weight: 500;
+    cursor: pointer;
 }
 .solution-box > .solution-paragraph {
     display: inline-block;
