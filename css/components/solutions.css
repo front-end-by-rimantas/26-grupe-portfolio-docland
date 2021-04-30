@@ -57,12 +57,11 @@
     position: relative;
 }
 .logo-box > .solution-logo {
-    position: absolute;
-    transform: translate(-50%, -50%);
+    display: flex;
     width: 50%;
     height: 50%;
-    left: 25%;
-    top: 25%;
+    margin:auto;
+    margin-top: 20px;
 }
 
 
