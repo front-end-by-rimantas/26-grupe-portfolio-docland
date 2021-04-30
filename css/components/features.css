@@ -1,4 +1,4 @@
-h2 {
+.featuresh2 {
     font-family: var(--font-family-primary);
     font-size: 46px;
     font-weight: 600;
@@ -41,6 +41,9 @@ h2 {
     display: flex;
     align-items: center;
     flex-direction: column;
+    cursor: pointer;
+    transition: 0.3s linear;
+    transform: translateY(0);
 }
 .features-box > i {
     width: 120px;
@@ -67,4 +70,43 @@ h2 {
 }
 .features-box > .i6 {
     background-image: url("/svg/pf6.svg");
+}
+.features-boxes > .features-box:hover {
+    transition: 0.3s linear;
+    transform: translateY(-5px);
+}
+
+@media (min-width: 992px) {
+    .features {
+        width: 930px;
+    }
+}
+@media (min-width: 1200px) {
+    .features {
+        width: 1110px;
+    }
+}
+@media (max-width: 992px) {
+    .features {
+        width: 630px;
+    }
+    .features > .features-boxes {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 768px) {
+    .features {
+        width: 510px;
+    }
+    .features > .features-boxes {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 576px) {
+    .features {
+        width: 100%;
+    }
+    .features > .features-boxes {
+        grid-template-columns: 1fr;
+    }
 }
