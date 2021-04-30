@@ -23,7 +23,7 @@ squares('.squares', squaresData);
 
 
 
-import './start-using.js'
+import './components/start-using.js'
 
 
 // CUSTOMER REVIEWS START
