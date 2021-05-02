@@ -16,6 +16,10 @@
 }
 
 .features > .features-boxes {
+    background-image: url('../../img/features-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     background-color: #4e2fa9;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -53,22 +57,22 @@
     background-position: center;
 }
 .features-box > .i1 {
-    background-image: url("/svg/pf1.svg");
+    background-image: url("../../svg/featuresSvg/pf1.svg");
 }
 .features-box > .i2 {
-    background-image: url("/svg/pf2.svg");
+    background-image: url("../../svg/featuresSvg/pf2.svg");
 }
 .features-box > .i3 {
-    background-image: url("/svg/pf3.svg");
+    background-image: url("../../svg/featuresSvg/pf3.svg");
 }
 .features-box > .i4 {
-    background-image: url("/svg/pf4.svg");
+    background-image: url("../../svg/featuresSvg/pf4.svg");
 }
 .features-box > .i5 {
-    background-image: url("/svg/pf5.svg");
+    background-image: url("../../svg/featuresSvg/pf5.svg");
 }
 .features-box > .i6 {
-    background-image: url("/svg/pf6.svg");
+    background-image: url("../../svg/featuresSvg/pf5.svg");
 }
 .features-boxes > .features-box:hover {
     transition: 0.3s linear;
@@ -104,6 +108,7 @@
 @media (max-width: 576px) {
     .features {
         width: 100%;
+        padding: 0 15px;
     }
     .features > .features-boxes {
         grid-template-columns: 1fr;
