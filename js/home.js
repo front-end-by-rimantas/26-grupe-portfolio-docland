@@ -7,8 +7,10 @@
 // HERO END
 
 import { squares } from './components/squares.js'
+import { solutionData } from './data/solutionData.js';
 import { squaresData } from './data/squaresData.js'
 squares('.squares', squaresData);
+import { solutionBox} from './components/solutionBox.js'
 // CUSTOMIZATION START
 // CUSTOMIZATION END
 
@@ -19,11 +21,13 @@ squares('.squares', squaresData);
 // PRODUCT RATING REVIEWS END
 
 // SOLUTIONS START
+
+solutionBox('.box-container', solutionData);
 // SOLUTIONS END
 
 
 
-import './start-using.js'
+import './components/start-using.js'
 
 
 // CUSTOMER REVIEWS START
