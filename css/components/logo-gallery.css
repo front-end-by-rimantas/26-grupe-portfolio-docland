@@ -1,0 +1,35 @@
+.logo-section {
+    font-size: var(--font-size-46);
+    text-align: center;
+    position: relative;
+}
+.logo-content {
+    margin-bottom: 50px;
+}
+.logo-content > .logo-header {
+    font-size: var(--font-size-46);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.logo-content > .logo-paragraph{
+    display: inline-block;
+    font-size: 20px;
+    margin: auto;
+}
+.logo-container{
+    display: flex;
+    width: 90%;
+    margin:auto;
+    justify-content:space-evenly;
+}
+.logo-container > .logo-row{
+    opacity: 0.3;
+    transition: 0.5s;
+}
+.logo-container > .logo-row:hover{
+    opacity: 1;
+    width: 55px;
+    height: 55px;
+    transition: 0.5s;
+}
