@@ -42,7 +42,7 @@ header {
    
    header i {
     display: inline-block!important;
-    color: white;
+    color: #5dd9c1;
     margin-top: 34px;
    }
 
@@ -70,4 +70,21 @@ header {
            width: 1410px;
         }
    }
-   
+header > .menu {
+
+}
+
+
+header .close {
+    font-size: 30px;
+    display: contents;
+}
+header > .slidemenu {
+    position: fixed;
+    width: 400px;
+    height: 100vh;
+    right: 0;
+    background-color: red;
+    z-index: 1;
+}
+

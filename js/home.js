@@ -1,6 +1,7 @@
 // COMPONENTS AND DATA IMPORT
 
 // /*HEADER START
+import './components/slidemenu.js'
 // HEADER END
 
 // HERO START

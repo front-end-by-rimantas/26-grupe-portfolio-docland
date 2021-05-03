@@ -16,7 +16,7 @@ function squares (selector, data) {
 
 // 2 scroll stebejimas
  const squaresDOM = DOM.querySelectorAll('.box');
- console.log(squaresDOM);
+
  
 for (const squareDOM of squaresDOM) {
     addEventListener('scroll', () => {
