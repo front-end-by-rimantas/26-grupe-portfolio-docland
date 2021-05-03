@@ -15,7 +15,11 @@ CUSTOMIZATION END
 PAYMENT METHODS START
 PAYMENT METHODS END
 
-PRODUCT RATING REVIEWS START
+PRODUCT RATING REVIEWS START*/
+import { customerReviewsData } from './data/customer-reviews.js';
+import { CaseStudies } from './components/case-studies/CaseStudies.js';
+import { Carousel } from './components/carousel/Carousel.js';
+/*
 PRODUCT RATING REVIEWS END
 
 SOLUTIONS START
