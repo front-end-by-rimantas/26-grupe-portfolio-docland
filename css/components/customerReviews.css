@@ -1,12 +1,12 @@
 .container .customer-review {
     display: flex;
-    justify-content: center;
+ 
     flex-wrap: wrap;
 }
-.container customer-review-cards {
+.container customer-review-card {
     flex-wrap: wrap;
     width: 90%;
-    justify-content: center;
+    
 }
 .customer-review-card {
     flex-wrap: wrap;

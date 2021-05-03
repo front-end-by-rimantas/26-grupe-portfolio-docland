@@ -17,8 +17,8 @@ PAYMENT METHODS END
 
 PRODUCT RATING REVIEWS START*/
 import { customerReviewsData } from './data/customer-reviews.js';
-import { CaseStudies } from './components/case-studies/CaseStudies.js';
-import { Carousel } from './components/carousel/Carousel.js';
+import { CustomerReviews } from './components/customer-reviews.js';
+import { Carousel } from './components/carousel/Carousel';
 /*
 PRODUCT RATING REVIEWS END
 
@@ -41,3 +41,8 @@ FOOTER START
 FOOTER END
 */
 // COMPONENTS EXECUTION
+new Carousel ({
+    data: customerReviewsData,
+    renderEngine: CustomerReviews,
+    breakpoints: [800, 1100]
+});

@@ -7,8 +7,9 @@
 class Carousel {
     constructor(params) {
         this.data = params.data;
-        console.log(params);
-        //this.renderEngine
+        this.renderEngine = params.renderEngine;
+        
+        
     }
 }
 
