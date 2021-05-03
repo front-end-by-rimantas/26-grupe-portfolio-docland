@@ -38,6 +38,9 @@ import './components/start-using.js'
 // PREMIUM FEATURES END
 
 // LOGO GALLERY START
+import {logosData} from './data/logo-gallery.js'
+import {LogosCarousel} from './components/LogosCarousel.js'
+const logoCarousel = new LogosCarousel ('.logo-section', logosData);
 // LOGO GALLERY END
 
 // FOOTER START
