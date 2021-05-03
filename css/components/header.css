@@ -21,11 +21,11 @@ header {
        margin-top: 38px;
    }
 
-   header .home {
+   header .links .home {
        color: #5dd9c1;
    }
    
-   header a {
+   header .links a {
        padding-left: 24px;
        padding-right: 24px;
        text-decoration: none;
@@ -74,17 +74,23 @@ header > .menu {
 
 }
 
-
-header .close {
-    font-size: 30px;
-    display: contents;
-}
 header > .slidemenu {
     position: fixed;
     width: 400px;
     height: 100vh;
     right: 0;
-    background-color: red;
+    background-color: gainsboro;
     z-index: 1;
 }
+
+header .close {
+    font-size: 30px;
+    display: none;
+}
+
+header .xappear {
+    display: contents;
+}
+
+
 
