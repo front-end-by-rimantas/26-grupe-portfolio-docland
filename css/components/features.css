@@ -1,0 +1,111 @@
+.featuresh2 {
+    font-family: var(--font-family-primary);
+    font-size: 46px;
+    font-weight: 600;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    line-height: 1.25;
+    text-align: center;
+}
+
+.features {
+    width: 1380px;
+    margin: auto;
+    margin-top: 100px; 
+    margin-bottom: 100px; 
+}
+
+.features > .features-boxes {
+    background-color: #4e2fa9;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+    row-gap: 70px;
+    column-gap: 40px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-radius: 20px;
+}
+
+.features h3 {
+    font-family: var(--font-family-primary);
+    font-weight: 500;
+    font-size: 26px;
+    margin-top: 28px;
+    color: white;
+}
+.features-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 0.3s linear;
+    transform: translateY(0);
+}
+.features-box > i {
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.features-box > .i1 {
+    background-image: url("/svg/pf1.svg");
+}
+.features-box > .i2 {
+    background-image: url("/svg/pf2.svg");
+}
+.features-box > .i3 {
+    background-image: url("/svg/pf3.svg");
+}
+.features-box > .i4 {
+    background-image: url("/svg/pf4.svg");
+}
+.features-box > .i5 {
+    background-image: url("/svg/pf5.svg");
+}
+.features-box > .i6 {
+    background-image: url("/svg/pf6.svg");
+}
+.features-boxes > .features-box:hover {
+    transition: 0.3s linear;
+    transform: translateY(-5px);
+}
+
+@media (min-width: 992px) {
+    .features {
+        width: 930px;
+    }
+}
+@media (min-width: 1200px) {
+    .features {
+        width: 1110px;
+    }
+}
+@media (max-width: 992px) {
+    .features {
+        width: 630px;
+    }
+    .features > .features-boxes {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 768px) {
+    .features {
+        width: 510px;
+    }
+    .features > .features-boxes {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 576px) {
+    .features {
+        width: 100%;
+    }
+    .features > .features-boxes {
+        grid-template-columns: 1fr;
+    }
+}

@@ -15,7 +15,7 @@
     width: 1410px;
 }
 .hero-container > .hero-column{
-    width: 40%;
+    width: 48%;
     padding-right: 40px;
     animation: fade-right;
     animation-delay: 0.8s;
