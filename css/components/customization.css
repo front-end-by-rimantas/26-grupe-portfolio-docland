@@ -108,6 +108,7 @@
     margin-left: 50%;
     font-family: var(--font-family-primary);
     font-weight: 600;
+    
   }
 
   .customize .title-description{
@@ -127,21 +128,28 @@
 
   .check, .check2{
     margin-top: 20px;
-    font-size: 16px;
+    font-size: 20px;
     display: flex;
-    color: #292929;;
+    color: #292929;
     font-weight: lighter;
     max-width: 400px;
   }
   .check1, .check3{
     margin-top: 20px;
     margin-bottom: 30px;
-    font-size: 16px;
     display: flex;
     color: #292929;;
     font-weight: lighter;
     max-width: 400px;
     margin-left: 50%;
+  }
+
+  .check h3, .check1 h3 .check2 h3, .check3 h3{
+    font-size: 24px;
+  }
+
+  .check p, .check1 p .check2 p, .check3 p{
+    font-size: 20px;
   }
 
   .main-container .learn{
