@@ -4,7 +4,7 @@
     position: relative;
 }
 .logo-content {
-    margin-bottom: 50px;
+
 }
 .logo-content > .logo-header {
     font-size: var(--font-size-46);
@@ -13,23 +13,43 @@
 }
 
 .logo-content > .logo-paragraph{
+display: inline-block;
+font-size: 20px;
+margin: auto;
+}
+
+.logo-carousel {
+    width: 70%;
     display: inline-block;
-    font-size: 20px;
-    margin: auto;
+    background-color: bisque;
+    overflow: hidden;
+    position: relative;
 }
-.logo-container{
-    display: flex;
-    width: 90%;
-    margin:auto;
-    justify-content:space-evenly;
+
+.logo-carousel > .logo-fotos {
+    display: inline-block;
+    width: calc(100% * 10/5);
+    background-color: aqua;
 }
-.logo-container > .logo-row{
-    opacity: 0.3;
-    transition: 0.5s;
+.logo-carousel > .logo-fotos > .gallery-logo{
+    display: inline-block;
+    float: left;
+    width: calc(100% / 10 );
+    height: 60px;
+    object-fit: contain;
+    object-position:center;
+    /* background-color: chartreuse; */
 }
-.logo-container > .logo-row:hover{
-    opacity: 1;
-    width: 55px;
-    height: 55px;
-    transition: 0.5s;
+
+.arrow-left {
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    transform: translate(-50%, -50%);
+}
+.arrow-right {
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    transform: translate(-50%, -50%);
 }
