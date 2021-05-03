@@ -70,8 +70,15 @@ header {
            width: 1410px;
         }
    }
-header > .menu {
 
+header .linksContainer {
+    background-color: aquamarine;
+    height: 40vh;
+}
+
+header .close {
+    font-size: 30px;
+    display: none;
 }
 
 header > .slidemenu {
@@ -83,13 +90,9 @@ header > .slidemenu {
     z-index: 1;
 }
 
-header .close {
-    font-size: 30px;
-    display: none;
-}
-
 header .xappear {
-    display: contents;
+    display: block;
+    float: right;
 }
 
 
