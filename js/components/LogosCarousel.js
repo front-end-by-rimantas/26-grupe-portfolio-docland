@@ -15,6 +15,7 @@ class LogosCarousel {
      
      this.logosOnScreen();
      this.render();
+     this.arrowsEvents()
     //  this.updateLogosOnScreen();
     };
 
@@ -52,12 +53,14 @@ class LogosCarousel {
         HTML += `<img src="${this.data.imgPath+item.img}" style ="width:${logoCalc}%"alt="Logo" class="gallery-logo">`     
         }
         carouselLogoDOM.innerHTML = HTML;
-        // this.listDOM = this.DOM.querySelector('.logo-fotos')
          
     };
+ 
+    // addEventListener cursor grab on enter, cursor scroll (scrollXposition - (currentposition))
+    // addEventListener make infinite logos scroll and on arrow clicks.
+
 
     // addEventListener  resize and update width.
-
     logosOnScreen(){
          const breakPoint =[300,600,800]
         window.addEventListener('resize', ()=>{
@@ -72,11 +75,21 @@ class LogosCarousel {
         sliderDOM.style.width = sliderCalc +'%'
     })
 }
+       //add event listener on arrows click
+       arrowsEvents(){
+        const arrowLeftDOM = document.querySelector('.arrow-left');
+        const arrowRightDOM = document.querySelector('.arrow-right');
+        const sliderDOM = document.querySelector('.logo-carousel > .logo-fotos');
+      let  a = 200
+        arrowLeftDOM.addEventListener('click', ()=>{
+           console.log('click');
+            //for loop offsetwidth / this.data.list.length??
+            //margin left ? left ? 
+        })
+       }
 
 
-    //add event listener on arrows click
-    // addEventListener cursor grab on enter, cursor scroll (scrollXposition - (currentposition))
-    // addEventListener make infinite logos scroll and on arrow clicks.
+
     
 }
 
