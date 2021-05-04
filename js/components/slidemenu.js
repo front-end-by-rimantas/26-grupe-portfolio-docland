@@ -1,27 +1,18 @@
 const burgerDOM = document.querySelector('.links i');
-const menuDOM = document.querySelector('.menu');
+const menuDOM = document.querySelector('.linksContainer');
 const closeDOM = document.querySelector('.close');
 
 
-console.log(menuDOM);
 
 const openSideMenu = () => {
-    menuDOM.classList.add('slidemenu');
-}
-
-const appearX = () => {
-    closeDOM.classList.add('xappear');
+    menuDOM.classList.remove('displayn');
+    menuDOM.classList.add('appearContainer')
 }
 
 const closeSideMenu = () => {
-    menuDOM.classList.remove('slidemenu');
+    menuDOM.classList.remove('appearContainer');
+    menuDOM.classList.add('displayn');
 }
 
-const disappearX = () => {
-    closeDOM.classList.remove('xappear');
-}
 burgerDOM.addEventListener('click', openSideMenu);
 closeDOM.addEventListener('click', closeSideMenu);
-burgerDOM.addEventListener('click', appearX);
-closeDOM.addEventListener('click', disappearX);
-console.log(burgerDOM);

@@ -35,6 +35,9 @@ header {
        text-transform: capitalize;
        font-weight: 400;
    }
+   header .link:hover {
+       color: #5dd9c1;
+   }
 
    header .signup {
        padding: 10px 33px;
@@ -47,10 +50,9 @@ header {
    }
 
    @media (max-width: 992px) {
-       header a {
+       header .containerh a {
            display: none;
        }
-
    }
    @media (min-width: 992px) {
        .containerh {
@@ -72,28 +74,42 @@ header {
    }
 
 header .linksContainer {
-    background-color: aquamarine;
-    height: 40vh;
 }
 
-header .close {
-    font-size: 30px;
+header .displayn {
     display: none;
 }
 
-header > .slidemenu {
+header > .appearContainer {
     position: fixed;
-    width: 400px;
-    height: 100vh;
     right: 0;
-    background-color: gainsboro;
+    width: 100%;
+    max-width: 400px;
+    height: 100vh;
+    background-color: white;
     z-index: 1;
 }
 
-header .xappear {
-    display: block;
+header > .linksContainer > .close {
+    display: inline-block;
     float: right;
+    margin-right: 20px;
+    margin-top: 32px;
+    font-size: 30px;
+    line-height: 1;
+}
+header > .linksContainer > .sideLinks {
+    margin-top: 50px;
 }
 
+header  .sideLinks a {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-weight: 600;
+}
 
-
+header > .linksContainer > .sidelogo {
+    margin-left: 20px;
+}
