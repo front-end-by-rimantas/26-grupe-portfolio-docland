@@ -62,7 +62,6 @@
   width: 100%;
 }
 .hero-container > .hero-column > .buttons-hero {
-  display: inline-block;
   margin-top: 30px;
 }
 .buttons-hero > .btn-global {
