@@ -2,7 +2,7 @@
 
 // /*HEADER START
 // HEADER END
-
+import "./components/header.js"
 // HERO START
 // HERO END
 
