@@ -98,6 +98,11 @@ header > .linksContainer > .close {
     font-size: 30px;
     line-height: 1;
 }
+
+header > .linksContainer > .close{
+cursor: pointer;
+}
+
 header > .linksContainer > .sideLinks {
     margin-top: 50px;
 }
@@ -108,6 +113,10 @@ header  .sideLinks a {
     margin-top: 20px;
     margin-left: 20px;
     font-weight: 600;
+}
+
+header  .sideLinks a:hover {
+    cursor: pointer;
 }
 
 header > .linksContainer > .sidelogo {
