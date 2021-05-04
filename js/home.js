@@ -40,9 +40,9 @@ import './components/start-using.js'
 // LOGO GALLERY START
 import {logosData} from './data/logo-gallery.js'
 import {LogosCarousel} from './components/LogosCarousel.js'
-const logoCarousel = new LogosCarousel ('.logo-section', logosData);
+const logoCarousel = new LogosCarousel ('.logo-carousel', logosData);
 // LOGO GALLERY END
-
+logoCarousel.init()
 // FOOTER START
 // FOOTER END
 

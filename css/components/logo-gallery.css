@@ -19,7 +19,7 @@ margin: auto;
 }
 
 .logo-carousel {
-    width: 70%;
+    width: 66%;
     display: inline-block;
     background-color: bisque;
     overflow: hidden;
@@ -28,17 +28,18 @@ margin: auto;
 
 .logo-carousel > .logo-fotos {
     display: inline-block;
-    width: calc(100% * 10/5);
+    /* width: calc(100% * 10/5); */
     background-color: aqua;
 }
 .logo-carousel > .logo-fotos > .gallery-logo{
     display: inline-block;
     float: left;
-    width: calc(100% / 10 );
+    /* width: calc(100% / 10 ); */
     height: 60px;
     object-fit: contain;
     object-position:center;
-    /* background-color: chartreuse; */
+    opacity: 0.3;
+    transition: 0.3s;
 }
 
 .arrow-left {
@@ -46,10 +47,18 @@ margin: auto;
     top: 50%;
     left: 1%;
     transform: translate(-50%, -50%);
+    cursor: pointer;
+    font-size: 30px;
 }
 .arrow-right {
     position: absolute;
     top: 50%;
     right: 1%;
     transform: translate(-50%, -50%);
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.arrow-right:hover{
+    color: orange;
 }
