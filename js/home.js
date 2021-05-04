@@ -25,7 +25,7 @@ import { solutionBox} from './components/solutionBox.js'
 solutionBox('.box-container', solutionData);
 // SOLUTIONS END
 
-
+import './components/fixedIcon.js'
 
 import './components/start-using.js'
 
