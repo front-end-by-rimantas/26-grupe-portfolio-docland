@@ -6,6 +6,10 @@ margin:auto;
 position: relative;
 }
 
+.logo-section > .logo-content{
+    margin-bottom: 100px;
+}
+
 .logo-content > .logo-header {
     font-size: 46px;
     margin-bottom: 20px;
