@@ -6,17 +6,21 @@ class LogosCarousel {
         this.DOM = null;
         this.listDOM =null;
         this.logosLength = this.data.list.length;
+        this.defaultLogos = 5;
         
     }
     init(){
         this.DOM = document.querySelector(this.selector);
         this.cloneImg();
         this.render();
+        this.logosOnScreen();
         // this.addEvents();
+        
+        this.test();
         
     };
 
-
+    //Validation
 
 
 
@@ -47,21 +51,22 @@ class LogosCarousel {
         const last =  this.data.list[this.data.list.length - 1];
         this.data.list = [last,...this.data.list, first];
         this.logosLength = this.data.list.length;
-        console.log(this.logosLength);
     }
-
 
     generateImg(){
         let img = ''
         for(let i = 0; i < this.logosLength;i++){
             let sourceUrl = `${this.data.imgPath + this.data.list[i].img}`
-            img += `<div class ="logo-box" style ="width: ${100 / this.logosLength}%;">
+            let logoBoxWidth = 100 / this.logosLength;
+            img += `<div class ="logo-box" style ="width: ${logoBoxWidth}%;">
             <img src="${sourceUrl}" alt="Logo" class="logo-img"></img>
             </div>`
         }
        return img
     }
+
     render(){
+        const listCalc = 100 * this.logosLength / this.defaultLogos;
         let HTML='';
 
             HTML+= ` 
@@ -71,7 +76,7 @@ class LogosCarousel {
             </div>
                 <span class="fa fa-angle-left arrow-left"></span>
                 <span class="fa fa-angle-right arrow-right"></span> 
-                <div class="logo-list" style ="${this.logosOnScreen()}; ">
+                <div class="logo-list" style ="${listCalc}%; ">
                         ${this.generateImg()}
                 </div>
          
@@ -80,15 +85,44 @@ class LogosCarousel {
        this.listDOM = this.DOM.querySelector('.logo-list');
     }
      
+
+    // Event listeners
+    // addEvents() {
+    //     const leftArrowDOM = this.DOM.querySelector('.arrow-left');
+    //     const rightArrowDOM = this.DOM.querySelector('.arrow-right');
+    //      let a =0;
+    //         for (let i = 0; i < 1; i++) {          
+    //             leftArrowDOM.addEventListener('click', ()=>{
+    //               a++ 
+    //                 this.listDOM.style.marginLeft = `${a*20}%`
+    //              })
+    //              rightArrowDOM.addEventListener('click', ()=>{
+    //                 a++ 
+    //                   this.listDOM.style.marginLeft = `${a-20}%`
+    //                })
+    //         }
+            
+    // }
+
+
     // addEvents() {
     //     const leftArrowDOM = this.DOM.querySelector('.arrow-left');
     //     for (let i = 0; i < this.logosLength; i++) {
-    //         let a = this.logosLength[i];
-    //         console.log(a);
+    //         leftArrowDOM.addEventListener('click', ()=>{
+    //             console.log(i);
+    //             // this.listDOM.style.marginLeft 
+    //         })
             
     //     }
-    // }
+    //     }
 
+//Test Section
+
+test(){
+    let a = this.listDOM.style.marginLeft
+    console.log(a);
+    console.log(this.listDOM);
+}
     };
 
 
