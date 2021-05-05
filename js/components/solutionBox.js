@@ -21,6 +21,7 @@ function solutionBox(selector, data){
     const logoDOM = solutionDOM.querySelectorAll('.solution-logo')
     console.log(solutionBoxDOM);
 
+
     for (let i = 0; i < logoDOM.length; i++) {
         solutionBoxDOM[i].addEventListener('mouseover', ()=>{
         logoDOM[i].style ="transition: 0.7s ; transform: rotate(15deg);"           

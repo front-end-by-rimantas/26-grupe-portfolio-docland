@@ -1,0 +1,73 @@
+.logo-section{
+text-align: center;
+width: 70%;
+overflow: hidden;
+margin:auto;
+position: relative;
+}
+
+.logo-content > .logo-header {
+    font-size: 46px;
+    margin-bottom: 20px;
+}
+
+.logo-content > .logo-paragraph{
+font-size: 17px;
+margin-bottom: 60px;
+}
+
+ .logo-list {
+     width: 140%;
+    height: 60px;
+    margin-left: 0;
+    transition: all 0.3s;
+    
+}
+.logo-list > .logo-box{
+    display: flex;
+    float: left;
+    justify-content: center;
+    /* opacity: .4; */
+}
+.logo-box > .logo-img {
+   width: 50px;
+   height: 50px;
+} 
+.logo-box > .logo-img:hover{
+    opacity: 1;
+    width: 45px;
+    height: 45px;
+}
+.arrow-left {
+    position: absolute;
+    bottom: -10%;
+    left: 2%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    cursor: pointer;
+    padding: 20px;
+    z-index: 3;
+}
+.arrow-right {
+position: absolute;
+bottom: -10%;
+right: 0%;
+transform: translate(-50%, -50%);
+font-size: 20px;
+cursor: pointer;
+padding: 20px;
+z-index: 3;
+}
+
+.arrow-left:hover{
+    color: orange;
+}
+.arrow-right:hover{
+    color: orange;
+}
+
+@media (max-width:1000px) {
+    .arrow-right{display: none;}
+    .arrow-left{display: none;}
+    
+}

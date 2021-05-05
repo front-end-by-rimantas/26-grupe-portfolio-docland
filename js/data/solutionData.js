@@ -1,6 +1,6 @@
 const solutionData = [
     {  
-    logoName: `../../img/solution/pi`,  
+    logoName: `./img/solution/pi`,  
     logoBg: `#DFF5FF`,
     logoColor: `#21BCFF`,
     headerText: `Geo Location Support`,
@@ -9,6 +9,7 @@ const solutionData = [
     },
     {
     logoName: `../../img/solution/pi`,
+    logoName: `./img/solution/pi`,
     logoBg: `#FFF3EB`,
     logoColor: `#F2A29E`,
     headerText: `Order Management`,
@@ -17,6 +18,7 @@ const solutionData = [
     },
     {
     logoName: `../../img/solution/pi`,
+    logoName: `./img/solution/pi`,
     logoBg: `#DFFFF6`,
     logoColor: `#2DCEA5`,
     headerText: `Related Product`,
@@ -25,6 +27,7 @@ const solutionData = [
     },
     {
     logoName: `../../img/solution/pi`,
+    logoName: `./img/solution/pi`,
     logoBg: `#E9F3FF`,
     logoColor: `#0472FA`,
     headerText: `Guest Checkout`,

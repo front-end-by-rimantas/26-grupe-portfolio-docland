@@ -7,6 +7,7 @@
   position: relative;
   text-align: center;
   width: 100%;
+  overflow: hidden;
 }
 
 .start-using .decor-line {
@@ -65,6 +66,24 @@
   margin-right: 5px;
 }
 
+.drop-back{
+  display: none;
+  transition: opacity 0.2s ease-out;
+  background-color: rgba(17, 26, 48, 0.8);
+  position: fixed;
+  opacity: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+
+.drop-back.show{
+  opacity: 1;
+  display: block;
+}
+
 .youtube-modal {
   align-items: center;
   display: none;
@@ -76,7 +95,7 @@
   transform: translate(-50%, -50%);
   transition: all 0.5s;
   width: 70vw;
-  z-index: 100;
+  z-index: 101;
 }
 
 .youtube-modal-open {
