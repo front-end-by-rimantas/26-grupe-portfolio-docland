@@ -6,16 +6,14 @@ margin:auto;
 position: relative;
 }
 
-.logo-section > .logo-content{
-margin-bottom:200px;
-}
-
 .logo-content > .logo-header {
-
+    font-size: 46px;
+    margin-bottom: 20px;
 }
 
 .logo-content > .logo-paragraph{
-
+font-size: 17px;
+margin-bottom: 60px;
 }
 
  .logo-list {
