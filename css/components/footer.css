@@ -117,6 +117,7 @@
     .footer-box-1 p, .footer-email-form {
         max-width: 380px;
     }
+}
 @media screen and (max-width: 1200px) {
     .footer-container {
         width: 930px;
