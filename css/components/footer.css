@@ -54,9 +54,10 @@
     line-height: 1.78;
     text-decoration: none;
     margin-bottom: 10px;
+    transition: all 0.5s;
 }
 .footer-email-form {
-    max-width: 440px;
+    max-width: 470px;
     padding: 0 15px;
 }
 .footer-email-form h3 {
@@ -76,7 +77,21 @@
 .footer-email-button {
     position: relative;
 }
-
+.footer-box-2 a:hover {
+    color: #fbf349;
+    transform: translateX(5px);
+}
+.footer-box-3 a:hover {
+    color: #fbf349;
+    transform: translateX(5px);
+}
+.footer-box-3 a:hover {
+    color: #fbf349;
+    transform: translateX(5px);
+}
+.socials a:hover {
+    background-color: #fbf349;
+}
 #footer-email {
     width: 100%;
     height: 60px;
