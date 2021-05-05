@@ -7,7 +7,7 @@ header {
     width: 100%;
    }
    
-   .containerh {
+   .header-container {
        display: flex;
        justify-content: space-between;
        background-color: #4E2EA9;
@@ -50,12 +50,12 @@ header {
    }
 
    @media (max-width: 992px) {
-       header .containerh a {
+       header .header-container a {
            display: none;
        }
    }
    @media (min-width: 992px) {
-       .containerh {
+       .header-container {
            width: 960px;
        }
        header i {
@@ -63,17 +63,17 @@ header {
        }
    }
        @media (min-width: 1200px) {
-           .containerh {
+           .header-container {
                width: 1140px;
            }
    }
    @media (min-width: 1500px) {
-       .containerh {
+       .header-container {
            width: 1410px;
         }
    }
 
-header .linksContainer {
+header .links-container {
 }
 
 header .displayn {
@@ -90,7 +90,7 @@ header > .appearContainer {
     z-index: 1;
 }
 
-header > .linksContainer > .close {
+header > .links-container > .close {
     display: inline-block;
     float: right;
     margin-right: 20px;
@@ -99,11 +99,11 @@ header > .linksContainer > .close {
     line-height: 1;
 }
 
-header > .linksContainer > .close{
+header > .links-container > .close{
 cursor: pointer;
 }
 
-header > .linksContainer > .sideLinks {
+header > .links-container > .sideLinks {
     margin-top: 50px;
 }
 
@@ -119,6 +119,6 @@ header  .sideLinks a:hover {
     cursor: pointer;
 }
 
-header > .linksContainer > .sidelogo {
+header > .links-container > .sidelogo {
     margin-left: 20px;
 }

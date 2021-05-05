@@ -1,18 +1,19 @@
 // COMPONENTS AND DATA IMPORT
 
 // /*HEADER START
-import { header } from './components/header.js'
-import { headerData } from './data/headerData.js'
-import './components/slidemenu.js'
-header ('.links', headerData);
+import { header } from "./components/header.js";
+import { headerData } from "./data/headerData.js";
+import { sidemenu } from "./components/sidemenu.js";
+header(".links", headerData);
+sidemenu(".sideLinks", headerData);
 // HEADER END
 
 // HERO START
 // HERO END
 
-import { squares } from './components/squares.js'
-import { squaresData } from './data/squaresData.js'
-squares('.squares', squaresData);
+import { squares } from "./components/squares.js";
+import { squaresData } from "./data/squaresData.js";
+squares(".squares", squaresData);
 // CUSTOMIZATION START
 // CUSTOMIZATION END
 
@@ -25,10 +26,7 @@ squares('.squares', squaresData);
 // SOLUTIONS START
 // SOLUTIONS END
 
-
-
-import './start-using.js'
-
+import "./start-using.js";
 
 // CUSTOMER REVIEWS START
 // CUSTOMER REVIEWS END
