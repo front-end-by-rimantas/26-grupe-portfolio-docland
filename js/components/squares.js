@@ -1,4 +1,3 @@
-// 1
 
 function squares (selector, data) {
     const DOM = document.querySelector(selector);
@@ -9,30 +8,20 @@ function squares (selector, data) {
         <h2>${info.number}</h2>
         <p>${info.label}</p>
       </div>`;
- 
     }
-
     DOM.innerHTML += HTML; 
 
-// 2 scroll stebejimas
  const squaresDOM = DOM.querySelectorAll('.box');
-
- 
 for (const squareDOM of squaresDOM) {
     addEventListener('scroll', () => {
         const elementTop = squareDOM.offsetTop;
         const elementHeight = squareDOM.clientHeight;
-
         const isVisible = scrollY + innerHeight >= elementTop + elementHeight;
-
         if (isVisible) {
             squareDOM.classList.add('animate');
         }
     })
+    }
 }
-
-}
-
-
 
 export { squares }
