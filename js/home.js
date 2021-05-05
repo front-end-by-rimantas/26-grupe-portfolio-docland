@@ -30,6 +30,7 @@ solutionBox('.box-container', solutionData);
 import './components/start-using.js'
 
 
+
 // CUSTOMER REVIEWS START
 // CUSTOMER REVIEWS END
 
@@ -43,8 +44,11 @@ featuresBox('.features-boxes', featuresData)
 // PREMIUM FEATURES END
 
 // LOGO GALLERY START
+import {logosData} from './data/logo-gallery.js'
+import {LogosCarousel} from './components/LogosCarousel.js'
+const logoCarousel = new LogosCarousel ('.logo-section', logosData);
 // LOGO GALLERY END
-
+logoCarousel.init()
 // FOOTER START
 // FOOTER END
 
