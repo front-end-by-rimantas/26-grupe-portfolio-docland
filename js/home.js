@@ -1,7 +1,10 @@
 // COMPONENTS AND DATA IMPORT
 
 // /*HEADER START
+import { header } from './components/header.js'
+import { headerData } from './data/headerData.js'
 import './components/slidemenu.js'
+header ('.links', headerData);
 // HEADER END
 
 // HERO START

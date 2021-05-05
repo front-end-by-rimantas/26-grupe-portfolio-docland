@@ -91,9 +91,9 @@ header > .appearContainer {
 }
 
 header > .linksContainer > .close {
-    display: block;
+    display: inline-block;
     float: right;
-    margin-right: 30px;
+    margin-right: 20px;
     margin-top: 32px;
     font-size: 30px;
     line-height: 1;
