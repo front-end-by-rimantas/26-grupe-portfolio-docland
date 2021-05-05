@@ -7,8 +7,6 @@ const logosData = {
         {img: 'logo3.png'},
         {img: 'logo4.png'},
         {img: 'logo5.png'},
-
-
     ]
 }
 
