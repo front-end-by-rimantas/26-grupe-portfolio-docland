@@ -7,15 +7,16 @@ position: relative;
 }
 
 .logo-section > .logo-content{
-margin-bottom:200px;
+    margin-bottom: 100px;
 }
 
 .logo-content > .logo-header {
-
+    font-size: 46px;
+    margin-bottom: 20px;
 }
 
 .logo-content > .logo-paragraph{
-
+font-size: 17px;
 }
 
  .logo-list {
