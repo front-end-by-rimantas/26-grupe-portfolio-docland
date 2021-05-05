@@ -34,7 +34,13 @@ import './components/start-using.js'
 // CUSTOMER REVIEWS START
 // CUSTOMER REVIEWS END
 
-// PREMIUM FEATURES START
+// // PREMIUM FEATURES START
+import { featuresData } from './data/featuresData.js'
+import { featuresBox } from './components/features.js'
+featuresBox('.features-boxes', featuresData)
+ 
+
+
 // PREMIUM FEATURES END
 
 // LOGO GALLERY START
