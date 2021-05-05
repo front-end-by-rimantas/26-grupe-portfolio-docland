@@ -118,11 +118,11 @@ class LogosCarousel {
 
 //Test Section
 
-test(){
-    let a = this.listDOM.style.marginLeft
-    console.log(a);
-    console.log(this.listDOM);
-}
+// test(){
+//     let a = this.listDOM.style.marginLeft
+//     console.log(a);
+//     console.log(this.listDOM);
+// }
     };
 
 
