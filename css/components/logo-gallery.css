@@ -1,65 +1,61 @@
-.logo-section {
-    font-size: var(--font-size-46);
-    text-align: center;
-    position: relative;
+.logo-section{
+text-align: center;
+width: 70%;
+overflow: hidden;
+margin:auto;
+position: relative;
 }
-.logo-content {
 
+.logo-section > .logo-content{
+margin-bottom:200px;
 }
+
 .logo-content > .logo-header {
-    font-size: var(--font-size-46);
-    font-weight: 600;
-    margin-bottom: 20px;
+
 }
 
 .logo-content > .logo-paragraph{
-display: inline-block;
-font-size: 20px;
-margin: auto;
+
 }
 
-.logo-carousel {
-    width: 66%;
-    display: inline-block;
-    background-color: bisque;
-    overflow: hidden;
-    position: relative;
-}
-
-.logo-carousel > .logo-fotos {
-    display: inline-block;
-    /* width: calc(100% * 10/5); */
-    background-color: aqua;
-}
-.logo-carousel > .logo-fotos > .gallery-logo{
-    display: inline-block;
-    float: left;
-    /* width: calc(100% / 10 ); */
+ .logo-list {
+    width: calc(100%*10/5);
     height: 60px;
-    object-fit: contain;
-    object-position:center;
-    opacity: 0.3;
-    transition: 0.3s;
+    margin-left: 0;
+    
 }
-
+.logo-list > .logo-box{
+    display: flex;
+    float: left;
+    justify-content: center;
+    /* width: calc(100%/10); */
+    opacity: 0.4;
+}
+.logo-box > .logo-img {
+   width: 50px;
+   height: 50px;
+} 
 .arrow-left {
     position: absolute;
-    top: 50%;
-    left: 1%;
+    bottom: -5%;
+    left: 2%;
     transform: translate(-50%, -50%);
+    font-size: 20px;
     cursor: pointer;
-    font-size: 30px;
+    padding: 15px;
     z-index: 3;
 }
 .arrow-right {
-    position: absolute;
-    top: 50%;
-    right: 1%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-    font-size: 30px;
-    z-index: 3;
+position: absolute;
+bottom: -5%;
+right: 0%;
+transform: translate(-50%, -50%);
+font-size: 20px;
+cursor: pointer;
+padding: 15px;
+z-index: 3;
 }
+
 .arrow-left:hover{
     color: orange;
 }

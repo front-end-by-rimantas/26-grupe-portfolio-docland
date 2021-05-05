@@ -1,97 +1,96 @@
+
 class LogosCarousel {
     constructor (selector, data){
         this.selector = selector;
-        this.data = data;
-        this.maxLogosPerScreen = 5;
-        this.DOM = null
-        this.logosPerScreen = 5; //BUS UNDEFINED ARBA NULL IR OVERWRITE su RESIZE FUNKC
+        this.data = data;       
+        this.DOM = null;
+        this.listDOM =null;
+        this.logosLength = this.data.list.length;
         
-
     }
     init(){
-        if(this.selectorValidation()){
-            return console.error('Error: duota informacija neatitiko kriteriju');
-        }
-     
-     this.logosOnScreen();
-     this.render();
-     this.arrowsEvents()
-    //  this.updateLogosOnScreen();
+        this.DOM = document.querySelector(this.selector);
+        this.cloneImg();
+        this.render();
+        // this.addEvents();
+        
     };
 
 
-
-
-
-    //Plan : 
-
-    //selector validation
-    selectorValidation(){
-        if(!typeof this.selector ==='string'){
-            console.error('Error: selectorius ne string tipo');
-        }
-    };
-
- 
-    //Render Logos
-    render(){
-        const logoDOM = document.querySelectorAll('.logo-fotos > .gallery-logo');
-        const logoCalc = 100/ this.data.list.length; 
-        const sliderDOM = document.querySelector('.logo-carousel > .logo-fotos');
-        const sliderCalc = 100 * this.data.list.length / this.logosPerScreen;
-
-        const carouselDOM = document.querySelector(this.selector);
-        let HTML = '';
-        HTML += ` <div class="logo-fotos" style ="width:${sliderCalc}%">
-                     <span class="fa fa-angle-left arrow-left "></span>
-                     <span class="fa fa-angle-right arrow-right "></span>
-                 </div>`
-        carouselDOM.innerHTML = HTML;
-
-        const carouselLogoDOM = document.querySelector('.logo-fotos');
-        for(const item of this.data.list){
-        HTML += `<img src="${this.data.imgPath+item.img}" style ="width:${logoCalc}%"alt="Logo" class="gallery-logo">`     
-        }
-        carouselLogoDOM.innerHTML = HTML;
-         
-    };
- 
-    // addEventListener cursor grab on enter, cursor scroll (scrollXposition - (currentposition))
-    // addEventListener make infinite logos scroll and on arrow clicks.
-
-
-    // addEventListener  resize and update width.
-    logosOnScreen(){
-         const breakPoint =[300,600,800]
-        window.addEventListener('resize', ()=>{
-            let itemPerView = 2;
-            for(let width of breakPoint) {
-                if(width < innerWidth){
-                    itemPerView++
-                }
-            }
-        const sliderCalc = 100 * this.data.list.length / itemPerView;
-        const sliderDOM = document.querySelector('.logo-carousel > .logo-fotos');
-        sliderDOM.style.width = sliderCalc +'%'
-    })
-}
-       //add event listener on arrows click
-       arrowsEvents(){
-        const arrowLeftDOM = document.querySelector('.arrow-left');
-        const arrowRightDOM = document.querySelector('.arrow-right');
-        const sliderDOM = document.querySelector('.logo-carousel > .logo-fotos');
-      let  a = 200
-        arrowLeftDOM.addEventListener('click', ()=>{
-           console.log('click');
-            //for loop offsetwidth / this.data.list.length??
-            //margin left ? left ? 
-        })
-       }
 
 
 
     
+
+
+    //HTML RENDERING && CLONE && LOGOS ON SCREEN
+
+    logosOnScreen(){
+        const breakPoint =[300,600,800]
+       window.addEventListener('resize', ()=>{
+           let itemPerView = 2;
+           for(let width of breakPoint) {
+               if(width < innerWidth){
+                   itemPerView++
+               }
+           }
+       const listCalc = 100 * this.logosLength / itemPerView;
+       const listDOM = document.querySelector('.logo-list');
+       let listWidth = listDOM.style.width = listCalc +'%'
+        return listWidth;
+   })
+  
 }
+
+    cloneImg(){
+        const first = this.data.list[0];
+        const last =  this.data.list[this.data.list.length - 1];
+        this.data.list = [last,...this.data.list, first];
+        this.logosLength = this.data.list.length;
+        console.log(this.logosLength);
+    }
+
+
+    generateImg(){
+        let img = ''
+        for(let i = 0; i < this.logosLength;i++){
+            let sourceUrl = `${this.data.imgPath + this.data.list[i].img}`
+            img += `<div class ="logo-box" style ="width: ${100 / this.logosLength}%;">
+            <img src="${sourceUrl}" alt="Logo" class="logo-img"></img>
+            </div>`
+        }
+       return img
+    }
+    render(){
+        let HTML='';
+
+            HTML+= ` 
+            <div class="logo-content">
+                <h2 class= "logo-header">We Helped Over 100 Companies</h2>
+                <p class="logo-paragraph">Vestibulum commodo sapien non elit porttitor, vitae volutpat nibh mollis.</p>
+            </div>
+                <span class="fa fa-angle-left arrow-left"></span>
+                <span class="fa fa-angle-right arrow-right"></span> 
+                <div class="logo-list" style ="${this.logosOnScreen()}; ">
+                        ${this.generateImg()}
+                </div>
+         
+            `
+       this.DOM.innerHTML = HTML;
+       this.listDOM = this.DOM.querySelector('.logo-list');
+    }
+     
+    // addEvents() {
+    //     const leftArrowDOM = this.DOM.querySelector('.arrow-left');
+    //     for (let i = 0; i < this.logosLength; i++) {
+    //         let a = this.logosLength[i];
+    //         console.log(a);
+            
+    //     }
+    // }
+
+    };
+
 
 
 export{LogosCarousel}
