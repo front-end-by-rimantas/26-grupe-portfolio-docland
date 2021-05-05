@@ -29,30 +29,35 @@ margin-bottom:200px;
     display: flex;
     float: left;
     justify-content: center;
-    opacity: 0.4;
+    /* opacity: .4; */
 }
 .logo-box > .logo-img {
    width: 50px;
    height: 50px;
 } 
+.logo-box > .logo-img:hover{
+    opacity: 1;
+    width: 45px;
+    height: 45px;
+}
 .arrow-left {
     position: absolute;
-    bottom: -5%;
+    bottom: -10%;
     left: 2%;
     transform: translate(-50%, -50%);
     font-size: 20px;
     cursor: pointer;
-    padding: 15px;
+    padding: 20px;
     z-index: 3;
 }
 .arrow-right {
 position: absolute;
-bottom: -5%;
+bottom: -10%;
 right: 0%;
 transform: translate(-50%, -50%);
 font-size: 20px;
 cursor: pointer;
-padding: 15px;
+padding: 20px;
 z-index: 3;
 }
 
