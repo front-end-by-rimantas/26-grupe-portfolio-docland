@@ -16,7 +16,7 @@
     }
         .carousel > .content > .list {
             display: inline-block;
-            transition: all 1s;
+           
            
         }
             .carousel > .content > .list > * {
