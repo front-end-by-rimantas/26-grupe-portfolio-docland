@@ -12,7 +12,7 @@ class LogosCarousel {
     this.cloneImg();
     this.render();
     this.logosOnScreen();
-    // this.addEvents();
+    this.addEvents();
 
   }
 
@@ -75,8 +75,30 @@ class LogosCarousel {
     this.DOM.innerHTML = HTML;
     this.listDOM = this.DOM.querySelector(".logo-list");
   }
+  addEvents(){
+    const leftArrowDOM = this.DOM.querySelector('.arrow-left');
+    leftArrowDOM.addEventListener('click',()=>{
+      this.listDOM.style.transform = 'translate(-14%)'
 
+    });
 
+    const rightArrowDOM = this.DOM.querySelector('.arrow-right');
+    rightArrowDOM.addEventListener('click',()=>{
+      this.listDOM.style.transform = 'translate(14%)'
+    });
+
+    this.listDOM.addEventListener('transitionend', ()=>{
+      this.listDOM.appendChild(this.listDOM.firstElementChild);
+
+      this.listDOM.style.transition = 'none';
+      this.listDOM.style.transform = 'translate(0)';
+
+      setTimeout(()=>{
+        this.listDOM.style.transition = 'all 0.5s'
+      })
+    })
+
+  }
 
     };
 
