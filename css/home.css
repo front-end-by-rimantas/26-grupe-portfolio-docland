@@ -2,12 +2,19 @@
 @import './main/reset.css';
 @import './main/variables.css';
 @import './main/layout.css';
+@import './main/global-elements.css';
 /* 3rd-party */
 @import './3rd-party/font-awesome.min.css';
 /* components */
 @import './components/header.css';
 @import './components/footer.css';
 @import './components/customerReviews.css';
-@import './components/carousel.css'
+@import './components/carousel.css';
 
+@import './components/hero.css';
+@import './components/squares.css';
+@import './components/start-using.css';
+@import './components/solutions.css';
+@import './components/features.css';
+@import './components/logo-gallery.css';
 /* CUSTOM STYLE BELOW */

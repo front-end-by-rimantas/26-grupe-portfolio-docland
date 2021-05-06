@@ -1,0 +1,126 @@
+.container {
+    width: 100%;
+    font-family: var(--font-family-primary);
+}
+
+.container > .padding-squares {
+    padding-top: 140px;
+    padding-bottom: 110px;
+}
+
+.container h2 {
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.container p {
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.78;
+}
+
+.container > .squares {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    column-gap: 30px;
+    text-align: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.container > .squares > .single-box1,
+.container > .squares > .single-box2,
+.container > .squares > .single-box3,
+.container > .squares > .single-box4{
+    padding: 50px ;
+    border-radius:35px;
+    opacity: 0;
+}
+
+.container > .squares > .single-box1 {
+    background-color: #DFF5FF;
+    color: #21BCFF;
+}
+
+.container > .squares > .single-box2 {
+    background-color: #FFF3EB;
+    color: #F99C5E;
+    animation-delay: 3s;
+}
+
+.container > .squares > .single-box3 {
+    background-color: #DFFFF6;
+    color: #2DCEA5;
+}
+
+.container > .squares > .single-box4 {
+    background-color: #E9F3FF;
+    color: #0472FA;
+}
+
+@media (max-width: 1500px) {
+    .container > .squares {
+    grid-template-columns: 160px 160px 160px 160px; 
+    }
+}
+
+@media (max-width: 1200px) {
+    .container > .squares {
+        grid-template-columns: 300px 300px;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 991px) {
+.container > .padding-squares {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+
+.container > .squares > [class*='single-box'] {
+    width: 80%;
+    }
+.container > .padding-squares {
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+.container > .squares {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    }
+}
+
+.container > .squares > .single-box1.box.animate {
+    animation: appears 1s linear 0.1s forwards;
+    }
+
+.container > .squares > .single-box2.box.animate {
+    animation: appears 1s linear 0.3s forwards;
+    }
+
+.container > .squares > .single-box3.box.animate {
+    animation: appears 1s linear 0.5s forwards;
+    }
+
+.container > .squares > .single-box4.box.animate {
+    animation: appears 1s linear 0.7s forwards;
+    }
+
+@keyframes appears {
+    0% {opacity: 0; 
+    transform: translateY(30px);
+    }
+    100% {opacity: 1;
+    transform: translateY(0px);
+    }
+}
