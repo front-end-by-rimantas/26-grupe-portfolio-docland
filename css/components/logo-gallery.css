@@ -25,27 +25,26 @@
 }
 
 .logo-list {
-  width: 100%;
+  width: 140%;
   height: 60px;
   margin-left: 0;
   transition: all 0.3s;
 }
-.logo-list > .logo-slider {
+.logo-list > .logo-box {
   display: flex;
-  justify-content: flex-start;
-  transition: all 0.5s;
+  float: left;
+  justify-content: center;
 }
-.logo-slider > .logo-img {
+.logo-box > .logo-img {
   width: 50px;
   height: 50px;
-  opacity: 1;
-  object-fit: contain;
-  /* transition: all 0.3s; */
+  opacity: .6;
+  transition: all 0.3s;
 }
-.logo-slider > .logo-img:hover {
-  /* opacity: 1;
+.logo-box > .logo-img:hover {
+  opacity: 1;
   width: 45px;
-  height: 45px; */
+  height: 45px;
 }
 .arrow-left {
   position: absolute;
