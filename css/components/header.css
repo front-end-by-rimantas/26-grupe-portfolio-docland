@@ -12,9 +12,14 @@ header {
   top: 0;
   z-index: 12;
   box-shadow: 0px 4px 23px -7px rgba(161, 161, 161, 0.66);
+  animation: fadeInDown 0.5s linear;
 }
 .sticky a:not(.home, .btn-global) {
   color: black;
+}
+
+.sticky .header-container {
+  background-color: var(--color-white);
 }
 
 
@@ -45,6 +50,10 @@ header .links a {
   font-size: 20px;
   text-transform: capitalize;
   font-weight: 400;
+}
+
+header .links a:last-child{
+  color: #4e2fa9;
 }
 header .link:hover {
   color: #5dd9c1;
@@ -135,4 +144,15 @@ header .sideLinks a:hover {
 
 header > .links-container > .sidelogo {
   margin-left: 20px;
+}
+
+@keyframes fadeInDown {
+  0% {
+     opacity: 0;
+     transform: translateY(-20px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateY(0);
+  }
 }

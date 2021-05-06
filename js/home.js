@@ -7,7 +7,7 @@ import { sidemenu } from "./components/sidemenu.js";
 header(".links", headerData);
 sidemenu(".sideLinks", headerData);
 // HEADER END
-import "./components/header.js"
+import "./components/headerOnScroll.js"
 // HERO START
 // HERO END
 
