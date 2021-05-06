@@ -53,6 +53,8 @@
     text-decoration: none;
     margin-bottom: 10px;
     transition: all 0.5s;
+    text-transform: capitalize;
+    color: #fff;
 }
 .footer-box-1 p {
     max-width: 380px;
