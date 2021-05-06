@@ -17,7 +17,6 @@ function featuresBox(selector, data) {
     featuresDOM.innerHTML += HTML;
 
     const featuresBoxDOM = featuresDOM.querySelectorAll('.features-box');
-    console.log(featuresBoxDOM);
     
     for (let i = 0; i < featuresBoxDOM.length; i++) {
         featuresBoxDOM[i].addEventListener('mouseover', ()=>{
