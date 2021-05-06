@@ -74,10 +74,11 @@ class LogosCarousel {
                 </div>
             `;
     this.DOM.innerHTML = HTML;
-    this.logoBoxDOM = document.querySelector(".logo-slider");
+    this.logoBoxDOM = this.DOM.querySelector(".logo-slider");
+    this.listDOM = this.DOM.querySelector(".logo-list");
   }
   addEvents() {
-    let itemWidth = 100/this.logosLength
+    let itemWidth = 100 / this.logosLength;
     const leftArrowDOM = this.DOM.querySelector(".arrow-left");
     leftArrowDOM.addEventListener("click", () => {
       this.logoBoxDOM.style.transform = `translate(-${itemWidth}%)`;
@@ -90,7 +91,6 @@ class LogosCarousel {
 
     this.logoBoxDOM.addEventListener("transitionend", () => {
       this.logoBoxDOM.appendChild(this.logoBoxDOM.firstElementChild);
-
       this.logoBoxDOM.style.transition = "none";
       this.logoBoxDOM.style.transform = "translate(0)";
 
@@ -98,6 +98,15 @@ class LogosCarousel {
         this.logoBoxDOM.style.transition = "all 0.5s";
       });
     });
+
+    setInterval(() => {
+      this.logoBoxDOM.style.transform = `translate(-${itemWidth}%)`;
+      this.logoBoxDOM.appendChild(this.logoBoxDOM.firstElementChild);
+
+      setTimeout(() => {
+        this.logoBoxDOM.style.transition = "all 0.5s";
+      });
+    }, 2000);
   }
 }
 
