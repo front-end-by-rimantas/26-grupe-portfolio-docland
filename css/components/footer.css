@@ -89,10 +89,10 @@
     font-size: 18px;
     font-weight: 300;
 }
-#footer-email::placeholder {
-    font-size: 18px;
-    font-weight: 300;
-    color: #707070;
+input {font-family: var(--font-family-secondary)
+}
+#footer-email:placeholder {
+    color: #292929;
 }
 #footer-email:focus {
     outline: none;
@@ -114,6 +114,7 @@
     font-family: var(--font-family-primary);
 }
 #footer-email-btn:hover {opacity: 0.9}
+
 @media screen and (max-width: 1500px) {
     .footer-container {
         max-width: 1110px;
