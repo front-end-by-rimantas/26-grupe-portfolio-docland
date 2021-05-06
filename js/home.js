@@ -55,6 +55,17 @@ const logoCarousel = new LogosCarousel ('.logo-section', logosData);
 // LOGO GALLERY END
 logoCarousel.init()
 // FOOTER START
+import { socialsLogoData } from './data/footerData.js';
+import { socials } from './components/footer.js';
+socials('.socials', socialsLogoData);
+
+import { footerFeaturesData } from './data/footerData.js';
+import { footerFeatures } from './components/footer.js';
+footerFeatures('.footer-box-2', footerFeaturesData);
+
+import { footerCompanyData } from './data/footerData.js';
+import { footerCompany } from './components/footer.js';
+footerCompany('.footer-box-3', footerCompanyData);
 // FOOTER END
 
 // COMPONENTS EXECUTION

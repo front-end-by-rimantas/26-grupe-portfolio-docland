@@ -1,6 +1,6 @@
-const socialsLogo = [
+const socialsLogoData = [
     {
-        icon: `facebook`,
+        icon: 'facebook',
         href: `#`,
     },
     {
@@ -53,6 +53,6 @@ const footerCompanyData = [
     },
 ];
 
-export { socialsLogo };
+export { socialsLogoData };
 export { footerFeaturesData };
 export { footerCompanyData };
