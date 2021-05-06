@@ -1,9 +1,9 @@
 const customerReviewsData = {
-    selector: '#customer_reviwes_block',
+    selector: '#customer_reviews_block',
     imgPath: 'img/customer-review/',
     data: [
         {
-            img: 'sr2.png',
+            img: 'Jennifer Lida.png',
             review: 
             `<i class="fa fa-star" aria-hidden="true"></i>
              <i class="fa fa-star" aria-hidden="true"></i>
@@ -17,7 +17,7 @@ const customerReviewsData = {
 
         },
         {
-            img: 'sr11.png',
+            img: 'Michael Clark.png',
             review: 
             `<i class="fa fa-star" aria-hidden="true"></i>
              <i class="fa fa-star" aria-hidden="true"></i>
@@ -31,7 +31,7 @@ const customerReviewsData = {
 
         },
         {
-            img: 'sr22.png',
+            img: 'Lida Jennifer',
             review: 
             `<i class="fa fa-star" aria-hidden="true"></i>
              <i class="fa fa-star" aria-hidden="true"></i>
@@ -44,7 +44,7 @@ const customerReviewsData = {
             qoute: 'It’s a beautifully written and true-to-life emotions, perspectives, insights, pov’s! This book had me laughing out loud and crying and then just FEELING. All. The. Feels!!! This makes you take a personal survey of your own life.'
         },
         {
-             img: 'sr11.png',
+             img: 'Clark Michael',
             review: 
             `<i class="fa fa-star" aria-hidden="true"></i>
             <i class="fa fa-star" aria-hidden="true"></i>

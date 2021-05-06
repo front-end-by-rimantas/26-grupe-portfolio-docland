@@ -43,6 +43,7 @@ FOOTER END
 // COMPONENTS EXECUTION
 new Carousel ({
     data: customerReviewsData,
-    renderEngine: CustomerReviews
+    renderEngine: CustomerReviews,
+    breakpoints: [800]
  
 });

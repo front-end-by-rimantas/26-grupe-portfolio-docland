@@ -1,3 +1,10 @@
+.section-title-host {
+    text-align: center;
+    flex:  0 0 100%;
+    max-width: 100%;
+    
+}
+
 .carousel {
     display: inline-block;
     width: 100%;
@@ -10,36 +17,48 @@
         .carousel > .content > .list {
             display: inline-block;
             transition: all 1s;
+           
         }
             .carousel > .content > .list > * {
                 display: inline-block;
                 float: left;
+                width: 50%;
+            
             }
-    .carousel > .actions {
-        display: inline-block;
+    .content > .actions {
+        display: flex;
         width: 100%;
-        text-align: center;
-        margin-top: 20px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
     }
-        .carousel > .actions > .dot {
-            display: inline-block;
-            width: 10px;
-            height: 10px;
-            margin: 5px;
-            border-radius: 50%;
-            background-color: #ccc;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-            .carousel > .actions > .dot:hover {
-                background-color: #36f;
-                width: 14px;
-                height: 14px;
-                margin: 3px;
-            }
-            .carousel > .actions > .dot.active {
-                background-color: #36f;
-                width: 14px;
-                height: 14px;
-                margin: 3px;
-            }
+    .carousel__button--prev {
+        left: 0;
+        margin-left: -20px;
+    }
+    .carousel__button--next {
+        right: 0;
+        margin-right: 20px;
+    }
+    .list > .customer-review {    
+    padding: 40px 40px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgb(0 0 0 / 6%);
+    margin-bottom: 30px;
+    }
+    .cs-top {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .media {
+        display: flex;
+        align-items: center;
+    }
+
+
+
+    .qoute {
+        text-align: left;
+    }
