@@ -1,31 +1,31 @@
 const featuresData = [
     {
-    logoName: `./svg/featuresSvg/pf`,
+    logoName: `./img/featuresSvg/pf`,
     headerText: `Import / Export`,
     link: "#",
     },
     {
-    logoName: `./svg/featuresSvg/pf`,
+    logoName: `./img/featuresSvg/pf`,
     headerText: `Multilanguage`,
     link: "#", 
     },
     {
-    logoName: `./svg/featuresSvg/pf`,
+    logoName: `./img/featuresSvg/pf`,
     headerText: `Shipping`,
     link: "#",  
     },
     {
-    logoName: `./svg/featuresSvg/pf`,
+    logoName: `./img/featuresSvg/pf`,
     headerText: `Manage Order`,
     link: "#",  
     },
     {
-    logoName: `./svg/featuresSvg/pf`,
+    logoName: `./img/featuresSvg/pf`,
     headerText: `Reporting`,
     link: "#",  
     },
     {
-    logoName: `./svg/featuresSvg/pf`,
+    logoName: `./img/featuresSvg/pf`,
     headerText: `Guest Checkout`,
     link: "#",  
     }
