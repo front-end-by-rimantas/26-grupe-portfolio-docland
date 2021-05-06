@@ -12,18 +12,13 @@ function sidemenu(selector, data) {
   const menuDOM = document.querySelector(".links-container");
   const closeDOM = document.querySelector(".close");
 
-  const openSideMenu = () => {
-    menuDOM.classList.remove("displayn");
-    menuDOM.classList.add("appearContainer");
+  const toggleMenu = () => {
+    menuDOM.classList.toggle("appearContainer");
+    menuDOM.classList.toggle("displayn");
   };
 
-  const closeSideMenu = () => {
-    menuDOM.classList.remove("appearContainer");
-    menuDOM.classList.add("displayn");
-  };
-
-  burgerDOM.addEventListener("click", openSideMenu);
-  closeDOM.addEventListener("click", closeSideMenu);
+  burgerDOM.addEventListener("click", toggleMenu);
+  closeDOM.addEventListener("click", toggleMenu);
 }
 
 export { sidemenu };
