@@ -1,98 +1,126 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Hind:wght@500&display=swap");
-
 header {
-  min-height: 100px;
-  background-color: #4e2ea9;
-  width: 100vh;
-}
-
-.sticky {
-  background-color: var(--color-white);
-  color: black;
-  position: sticky;
-  top: 0;
-  z-index: 12;
-  box-shadow: 0px 4px 23px -7px rgba(161, 161, 161, 0.66);
-}
-.sticky a:not(.home, .btn-global) {
-  color: black;
-}
-
-nav {
-  width: 1410px;
-  min-height: 100px;
+  font-family: var(--font-family-primary);
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin: auto;
-  padding: 0 15px;
+  justify-content: center;
+  background-color: #4e2ea9;
+  width: 100%;
 }
 
-li,
-a {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  cursor: pointer;
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #4e2ea9;
+  width: 85%;
+  min-height: 100px;
+}
+
+header .logo {
+  width: 116px;
+  height: 24px;
+  margin-top: 38px;
+}
+
+header .links .home {
+  color: #5dd9c1;
+}
+
+header .links a {
+  padding-left: 24px;
+  padding-right: 24px;
   text-decoration: none;
-  color: #fff;
+  color: white;
+  line-height: 5;
+  font-size: 20px;
   text-transform: capitalize;
+  font-weight: 400;
 }
-.home {
+header .link:hover {
   color: #5dd9c1;
-}
-li > a:hover {
-  color: #5dd9c1;
-}
-.logo {
-  cursor: pointer;
-  margin-right: auto;
-}
-.nav-links li {
-  display: inline-block;
-  padding: 0 24px;
-  height: 100%;
-}
-.button {
-  padding: 15px 33px;
-  color: #4e2ea9;
 }
 
-@media only screen and (min-width: 0px) {
-  header {
-    width: 100%;
-  }
-  nav {
-    width: 85%;
-  }
+header .signup {
+  padding: 10px 33px;
 }
-@media only screen and (min-width: 992px) {
-  .nav-links li {
-    padding-left: 0;
-    padding-right: 15px;
-  }
-  .navigation {
-    width: 960px;
-    padding: 0;
-  }
+
+header i {
+  display: inline-block;
+  color: #5dd9c1;
+  margin-top: 34px;
 }
-@media only screen and (max-width: 992px) {
-  .nav-links,
-  .button {
+
+header .links i {
+   cursor: pointer;
+  }
+
+@media (max-width: 992px) {
+  header .header-container a {
     display: none;
   }
 }
-@media only screen and (min-width: 1200px) {
-  .navigation {
-    width: 1140px;
+@media (min-width: 992px) {
+  .header-container {
+    width: 960px;
   }
-  .nav-links li {
-    padding: 0 24px;
+  header .links i {
+    display: none;
   }
 }
-@media only screen and (min-width: 1500px) {
-  .navigation {
+@media (min-width: 1200px) {
+  .header-container {
+    width: 1140px;
+  }
+}
+@media (min-width: 1500px) {
+  .header-container {
     width: 1410px;
   }
+}
+
+header .links-container {
+}
+
+header .displayn {
+  display: none;
+}
+
+header > .appearContainer {
+  position: fixed;
+  right: 0;
+  width: 100%;
+  max-width: 400px;
+  height: 100vh;
+  background-color: white;
+  z-index: 3;
+}
+
+header > .links-container > .close {
+  display: inline-block;
+  float: right;
+  margin: 32px 20px 0 0;
+  font-size: 30px;
+  line-height: 1;
+}
+
+header > .links-container > .close {
+  cursor: pointer;
+}
+
+header > .links-container > .sideLinks {
+  margin-top: 50px;
+}
+
+header .sideLinks a {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-weight: 600;
+}
+
+header .sideLinks a:hover {
+  cursor: pointer;
+}
+
+header > .links-container > .sidelogo {
+  margin-left: 20px;
 }
