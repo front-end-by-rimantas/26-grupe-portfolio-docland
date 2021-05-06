@@ -11,11 +11,12 @@ sidemenu(".sideLinks", headerData);
 // HERO START
 // HERO END
 
+// SQUARES START
 import { squares } from './components/squares.js'
-import { solutionData } from './data/solutionData.js';
 import { squaresData } from './data/squaresData.js'
 squares('.squares', squaresData);
-import { solutionBox} from './components/solutionBox.js'
+// SQUARES END
+
 // CUSTOMIZATION START
 // CUSTOMIZATION END
 
@@ -26,26 +27,22 @@ import { solutionBox} from './components/solutionBox.js'
 // PRODUCT RATING REVIEWS END
 
 // SOLUTIONS START
-
 solutionBox('.box-container', solutionData);
+import { solutionData } from './data/solutionData.js';
+import { solutionBox} from './components/solutionBox.js'
 // SOLUTIONS END
 
-
-
+// START-USING START
 import './components/start-using.js'
-
-
+// START-USING END
 
 // CUSTOMER REVIEWS START
 // CUSTOMER REVIEWS END
 
 // // PREMIUM FEATURES START
-import { featuresData } from './data/featuresData.js'
-import { featuresBox } from './components/features.js'
-featuresBox('.features-boxes', featuresData)
- 
-
-
+import { featuresData } from './data/featuresData.js';
+import { featuresBox } from './components/features.js';
+featuresBox('.features-boxes', featuresData);
 // PREMIUM FEATURES END
 
 // LOGO GALLERY START
