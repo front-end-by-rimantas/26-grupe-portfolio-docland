@@ -7,17 +7,21 @@
 }
 
 .logo-section > .logo-content{
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .logo-content > .logo-header {
   font-size: 46px;
   margin-bottom: 20px;
+  font-weight: 600;
 }
 
 .logo-content > .logo-paragraph {
-  font-size: 17px;
+  font-size: 20px;
+  line-height: 1.78;
+  color: #707070;
   margin-bottom: 60px;
+  font-weight: 300;
 }
 
 .logo-list {
@@ -30,11 +34,12 @@
   display: flex;
   float: left;
   justify-content: center;
-  /* opacity: .4; */
 }
 .logo-box > .logo-img {
   width: 50px;
   height: 50px;
+  opacity: .6;
+  transition: all 0.3s;
 }
 .logo-box > .logo-img:hover {
   opacity: 1;
@@ -43,20 +48,20 @@
 }
 .arrow-left {
   position: absolute;
-  bottom: -10%;
+  bottom: -13%;
   left: 2%;
   transform: translate(-50%, -50%);
-  font-size: 20px;
+  font-size: 30px;
   cursor: pointer;
   padding: 20px;
   z-index: 3;
 }
 .arrow-right {
   position: absolute;
-  bottom: -10%;
-  right: 0%;
+  bottom: -13%;
+  right: -2%;
   transform: translate(-50%, -50%);
-  font-size: 20px;
+  font-size: 30px;
   cursor: pointer;
   padding: 20px;
   z-index: 3;

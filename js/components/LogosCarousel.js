@@ -18,6 +18,7 @@ class LogosCarousel {
 
   //Validation
 
+  
   //HTML RENDERING && CLONE && LOGOS ON SCREEN
 
   logosOnScreen() {
