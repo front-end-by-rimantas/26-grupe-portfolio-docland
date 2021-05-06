@@ -1,73 +1,85 @@
-.logo-section{
-text-align: center;
-width: 70%;
-overflow: hidden;
-margin:auto;
-position: relative;
+.logo-section {
+  text-align: center;
+  width: 70%;
+  overflow: hidden;
+  margin: 50px auto 150px;
+  position: relative;
+}
+
+.logo-section > .logo-content{
+    margin-bottom: 50px;
 }
 
 .logo-content > .logo-header {
-    font-size: 46px;
-    margin-bottom: 20px;
+  font-size: 46px;
+  margin-bottom: 20px;
+  font-weight: 600;
 }
 
-.logo-content > .logo-paragraph{
-font-size: 17px;
-margin-bottom: 60px;
+.logo-content > .logo-paragraph {
+  font-size: 20px;
+  line-height: 1.78;
+  color: #707070;
+  margin-bottom: 60px;
+  font-weight: 300;
 }
 
- .logo-list {
-     width: 140%;
-    height: 60px;
-    margin-left: 0;
-    transition: all 0.3s;
-    
+.logo-list {
+  width: 100%;
+  height: 60px;
+  margin-left: 0;
+  transition: all 0.3s;
 }
-.logo-list > .logo-box{
-    display: flex;
-    float: left;
-    justify-content: center;
-    /* opacity: .4; */
+.logo-list > .logo-slider {
+  display: flex;
+  justify-content: flex-start;
+  transition: all 0.5s;
 }
-.logo-box > .logo-img {
-   width: 50px;
-   height: 50px;
-} 
-.logo-box > .logo-img:hover{
-    opacity: 1;
-    width: 45px;
-    height: 45px;
+.logo-slider > .logo-img {
+  width: 50px;
+  height: 50px;
+  opacity: 1;
+  object-fit: contain;
+  /* transition: all 0.3s; */
+}
+.logo-slider > .logo-img:hover {
+  /* opacity: 1;
+  width: 45px;
+  height: 45px; */
 }
 .arrow-left {
-    position: absolute;
-    bottom: -10%;
-    left: 2%;
-    transform: translate(-50%, -50%);
-    font-size: 20px;
-    cursor: pointer;
-    padding: 20px;
-    z-index: 3;
+  position: absolute;
+  bottom: -13%;
+  left: 2%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  cursor: pointer;
+  padding: 20px;
+  z-index: 3;
 }
 .arrow-right {
-position: absolute;
-bottom: -10%;
-right: 0%;
-transform: translate(-50%, -50%);
-font-size: 20px;
-cursor: pointer;
-padding: 20px;
-z-index: 3;
+  position: absolute;
+  bottom: -13%;
+  right: -2%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  cursor: pointer;
+  padding: 20px;
+  z-index: 3;
 }
 
-.arrow-left:hover{
-    color: orange;
+.arrow-left:hover {
+  color: orange;
 }
-.arrow-right:hover{
-    color: orange;
+.arrow-right:hover {
+  color: orange;
 }
 
-@media (max-width:1000px) {
-    .arrow-right{display: none;}
-    .arrow-left{display: none;}
-    
+@media (max-width: 1000px) {
+  .arrow-right {
+    display: none;
+  }
+  .arrow-left {
+    display: none;
+  }
 }
