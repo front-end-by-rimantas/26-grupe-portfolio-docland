@@ -1,6 +1,11 @@
 // COMPONENTS AND DATA IMPORT
 
 // /*HEADER START
+import { header } from "./components/header.js";
+import { headerData } from "./data/headerData.js";
+import { sidemenu } from "./components/sidemenu.js";
+header(".links", headerData);
+sidemenu(".sideLinks", headerData);
 // HEADER END
 
 // HERO START
