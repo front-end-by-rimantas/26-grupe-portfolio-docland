@@ -36,7 +36,7 @@ i.fa.fa-angle-up {
 @keyframes drop {
   0% {
     transform: scale(0);
-    top: 50%;
+    bottom: 50%;
     opacity: 0;
   }
 
