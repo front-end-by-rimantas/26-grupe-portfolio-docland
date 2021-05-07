@@ -4,6 +4,10 @@
     max-width: 100%;
     
 }
+.foto > img {
+    width: 80px;
+
+}
 
 .carousel {
     display: inline-block;

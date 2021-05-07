@@ -35,9 +35,11 @@ import './components/start-using.js'
 // START-USING END
 
 // CUSTOMER REVIEWS START
+
 import { customerReviewsData } from './data/customer-reviews.js';
 import { CustomerReviews } from './components/customer-reviews/CustomerReviews.js';
 import { Carousel } from './components/carousel/Carousel.js';
+
 // CUSTOMER REVIEWS END
 
 // // PREMIUM FEATURES START
@@ -69,3 +71,8 @@ footerCompany('.footer-box-3', footerCompanyData);
 // FOOTER END
 
 // COMPONENTS EXECUTION
+new Carousel ({
+    data: customerReviewsData,
+    renderEngine: CustomerReviews,
+    breakpoints: [800, 1100] 
+})

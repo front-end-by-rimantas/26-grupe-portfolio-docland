@@ -8,17 +8,19 @@ class CustomerReviews {
         let HTML = '';
 
         const itemWidth = 100 / this.data.length;
+        console.log(this.imgPath);
        
        
 
 
         for (let item of this.data) {
+            
             HTML += `<div class="customer-review" style="width: ${itemWidth}%;">
             <div class="spacing">
                 <div class="cs-top"> 
                     <div class="media">
                         <div class="foto">
-                            <img src="#" alt=" image">
+                            <img src=${this.imgPath + item.img} alt=" image">
                         </div>
                         <div class="review-name">
                             
