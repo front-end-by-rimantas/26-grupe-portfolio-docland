@@ -8,6 +8,7 @@ const solutionData = [
     link :`#`  
     },
     {
+    logoName: `../../img/solution/pi`,
     logoName: `./img/solution/pi`,
     logoBg: `#FFF3EB`,
     logoColor: `#F2A29E`,
@@ -16,6 +17,7 @@ const solutionData = [
     link: "#"
     },
     {
+    logoName: `../../img/solution/pi`,
     logoName: `./img/solution/pi`,
     logoBg: `#DFFFF6`,
     logoColor: `#2DCEA5`,
@@ -24,6 +26,7 @@ const solutionData = [
     link: "#"
     },
     {
+    logoName: `../../img/solution/pi`,
     logoName: `./img/solution/pi`,
     logoBg: `#E9F3FF`,
     logoColor: `#0472FA`,
