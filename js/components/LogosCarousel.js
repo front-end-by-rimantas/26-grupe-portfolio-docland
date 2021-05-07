@@ -3,22 +3,21 @@ class LogosCarousel {
     this.selector = selector;
     this.data = data;
     this.DOM = null;
-    this.listDOM = null;
+    this.logoBoxDOM = null;
     this.logosLength = this.data.list.length;
     this.defaultLogos = 5;
   }
   init() {
     this.DOM = document.querySelector(this.selector);
+
     this.cloneImg();
     this.render();
     this.logosOnScreen();
-    // this.addEvents();
-
+    this.addEvents();
   }
 
   //Validation
 
-  
   //HTML RENDERING && CLONE && LOGOS ON SCREEN
 
   logosOnScreen() {
@@ -31,8 +30,9 @@ class LogosCarousel {
         }
       }
       const listCalc = (100 * this.logosLength) / itemPerView;
-      const listDOM = document.querySelector(".logo-list");
-      let listWidth = (listDOM.style.width = listCalc + "%");
+      console.log(listCalc);
+      let listWidth = (this.logoBoxDOM.style.width = listCalc + "%");
+
       return listWidth;
     });
   }
@@ -49,9 +49,9 @@ class LogosCarousel {
     for (let i = 0; i < this.logosLength; i++) {
       let sourceUrl = `${this.data.imgPath + this.data.list[i].img}`;
       let logoBoxWidth = 100 / this.logosLength;
-      img += `<div class ="logo-box" style ="width: ${logoBoxWidth}%;">
-            <img src="${sourceUrl}" alt="Logo" class="logo-img"></img>
-            </div>`;
+      img += `
+            <img src="${sourceUrl}" style="width:${logoBoxWidth}%"alt="Logo" class="logo-img"></img>
+            `;
     }
     return img;
   }
@@ -67,19 +67,47 @@ class LogosCarousel {
             </div>
                 <span class="fa fa-angle-left arrow-left"></span>
                 <span class="fa fa-angle-right arrow-right"></span> 
-                <div class="logo-list" style ="${listCalc}%; ">
+                <div class="logo-list">
+                <div class ="logo-slider" style ="width: ${listCalc}%;">
                         ${this.generateImg()}
                 </div>
-         
+                </div>
             `;
     this.DOM.innerHTML = HTML;
+    this.logoBoxDOM = this.DOM.querySelector(".logo-slider");
     this.listDOM = this.DOM.querySelector(".logo-list");
   }
+  addEvents() {
+    let itemWidth = 100 / this.logosLength;
+    const leftArrowDOM = this.DOM.querySelector(".arrow-left");
+    leftArrowDOM.addEventListener("click", () => {
+      this.logoBoxDOM.style.transform = `translate(-${itemWidth}%)`;
+    });
 
+    const rightArrowDOM = this.DOM.querySelector(".arrow-right");
+    rightArrowDOM.addEventListener("click", () => {
+      this.logoBoxDOM.style.transform = `translate(${itemWidth}%)`;
+    });
 
+    this.logoBoxDOM.addEventListener("transitionend", () => {
+      this.logoBoxDOM.appendChild(this.logoBoxDOM.firstElementChild);
+      this.logoBoxDOM.style.transition = "none";
+      this.logoBoxDOM.style.transform = "translate(0)";
 
-    };
+      setTimeout(() => {
+        this.logoBoxDOM.style.transition = "all 0.5s";
+      });
+    });
 
+    setInterval(() => {
+      this.logoBoxDOM.style.transform = `translate(-${itemWidth}%)`;
+      this.logoBoxDOM.appendChild(this.logoBoxDOM.firstElementChild);
 
+      setTimeout(() => {
+        this.logoBoxDOM.style.transition = "all 0.5s";
+      });
+    }, 2000);
+  }
+}
 
 export { LogosCarousel };

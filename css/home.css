@@ -1,19 +1,20 @@
 /* main */
-@import './main/reset.css';
-@import './main/variables.css';
-@import './main/layout.css';
-@import './main/global-elements.css';
+@import "./main/reset.css";
+@import "./main/variables.css";
+@import "./main/layout.css";
+@import "./main/global-elements.css";
 /* 3rd-party */
-@import './3rd-party/font-awesome.min.css';
+@import "./3rd-party/font-awesome.min.css";
 /* components */
-@import './components/header.css';
-@import './components/footer.css';
-@import './components/hero.css';
-@import './components/squares.css';
-@import './components/start-using.css';
-@import './components/solutions.css';
-@import './components/features.css';
-@import './components/fixedIcon.css';
-
 @import './components/logo-gallery.css';
+@import "./components/header.css";
+@import "./components/footer.css";
+@import "./components/hero.css";
+@import "./components/squares.css";
+@import "./components/start-using.css";
+@import "./components/customization.css";
+@import "./components/solutions.css";
+@import "./components/features.css";
+@import "./components/logo-gallery.css";
+@import './components/fixedIcon.css';
 /* CUSTOM STYLE BELOW */

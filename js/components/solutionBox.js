@@ -19,6 +19,8 @@ function solutionBox(selector, data){
 
     const solutionBoxDOM = solutionDOM.querySelectorAll('.solution-box');
     const logoDOM = solutionDOM.querySelectorAll('.solution-logo')
+    console.log(solutionBoxDOM);
+
 
     for (let i = 0; i < logoDOM.length; i++) {
         solutionBoxDOM[i].addEventListener('mouseover', ()=>{
