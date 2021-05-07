@@ -41,6 +41,9 @@
     font-weight: 500;
     cursor: pointer;
 }
+.solution-box > .solution-header a{
+    color: #292929;
+}
 .solution-box > .solution-paragraph {
     display: inline-block;
     font-size: 16px;

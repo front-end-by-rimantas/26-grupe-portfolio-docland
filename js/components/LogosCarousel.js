@@ -50,7 +50,7 @@ class LogosCarousel {
       let sourceUrl = `${this.data.imgPath + this.data.list[i].img}`;
       let logoBoxWidth = 100 / this.logosLength;
       img += `
-            <img src="${sourceUrl}" style="width:${logoBoxWidth}%"alt="Logo" class="logo-img"></img>
+            <img src="${sourceUrl}" style="width:${logoBoxWidth}%"alt="Logo" class="logo-img">
             `;
     }
     return img;
