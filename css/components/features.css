@@ -42,8 +42,6 @@
   align-items: center;
   flex-direction: column;
   cursor: pointer;
-  transition: 0.3s linear;
-  transform: translateY(0);
 }
 .features-box > i {
   width: 120px;
@@ -57,29 +55,6 @@
   border-radius: 10px;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.features-box > .i1 {
-  background-image: url("/svg/pf1.svg");
-}
-.features-box > .i2 {
-  background-image: url("/svg/pf2.svg");
-}
-.features-box > .i3 {
-  background-image: url("/svg/pf3.svg");
-}
-.features-box > .i4 {
-  background-image: url("/svg/pf4.svg");
-}
-.features-box > .i5 {
-  background-image: url("/svg/pf5.svg");
-}
-.features-box > .i6 {
-  background-image: url("/svg/pf6.svg");
-}
-.features-boxes > .features-box:hover {
-  transition: 0.3s linear;
-  transform: translateY(-5px);
 }
 
 .features-logo-box > .features-logo {
