@@ -4,8 +4,6 @@
 import { header } from "./components/header.js";
 import { headerData } from "./data/headerData.js";
 import { sidemenu } from "./components/sidemenu.js";
-header(".links", headerData);
-sidemenu(".sideLinks", headerData);
 // HEADER END
 
 // HERO START
@@ -14,7 +12,6 @@ sidemenu(".sideLinks", headerData);
 // SQUARES START
 import { squares } from './components/squares.js'
 import { squaresData } from './data/squaresData.js'
-squares('.squares', squaresData);
 // SQUARES END
 
 // CUSTOMIZATION START
@@ -27,7 +24,6 @@ squares('.squares', squaresData);
 // PRODUCT RATING REVIEWS END
 
 // SOLUTIONS START
-solutionBox('.box-container', solutionData);
 import { solutionData } from './data/solutionData.js';
 import { solutionBox} from './components/solutionBox.js'
 // SOLUTIONS END
@@ -42,27 +38,30 @@ import './components/start-using.js'
 // // PREMIUM FEATURES START
 import { featuresData } from './data/featuresData.js';
 import { featuresBox } from './components/features.js';
-featuresBox('.features-boxes', featuresData);
 // PREMIUM FEATURES END
 
 // LOGO GALLERY START
 import {logosData} from './data/logo-gallery.js'
 import {LogosCarousel} from './components/LogosCarousel.js'
-const logoCarousel = new LogosCarousel ('.logo-section', logosData);
 // LOGO GALLERY END
-logoCarousel.init()
+
 // FOOTER START
 import { socialsLogoData } from './data/footerData.js';
 import { socials } from './components/footer.js';
-socials('.socials', socialsLogoData);
-
 import { footerFeaturesData } from './data/footerData.js';
 import { footerFeatures } from './components/footer.js';
-footerFeatures('.footer-box-2', footerFeaturesData);
-
 import { footerCompanyData } from './data/footerData.js';
 import { footerCompany } from './components/footer.js';
-footerCompany('.footer-box-3', footerCompanyData);
 // FOOTER END
 
 // COMPONENTS EXECUTION
+header(".links", headerData);
+sidemenu(".sideLinks", headerData);
+squares('.squares', squaresData);
+solutionBox('.box-container', solutionData);
+featuresBox('.features-boxes', featuresData);
+const logoCarousel = new LogosCarousel ('.logo-section', logosData);
+logoCarousel.init()
+socials('.socials', socialsLogoData);
+footerFeatures('.footer-box-2', footerFeaturesData);
+footerCompany('.footer-box-3', footerCompanyData);
