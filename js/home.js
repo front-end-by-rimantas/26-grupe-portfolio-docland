@@ -20,8 +20,6 @@ import { squaresData } from './data/squaresData.js'
 // PAYMENT METHODS START
 // PAYMENT METHODS END
 
-// PRODUCT RATING REVIEWS START
-// PRODUCT RATING REVIEWS END
 
 // SOLUTIONS START
 import { solutionData } from './data/solutionData.js';
@@ -35,6 +33,11 @@ import './components/start-using.js'
 // START-USING END
 
 // CUSTOMER REVIEWS START
+
+import { customerReviewsData } from './data/customer-reviews.js';
+import { CustomerReviews } from './components/customer-reviews/CustomerReviews.js';
+import { Carousel } from './components/carousel/Carousel.js';
+
 // CUSTOMER REVIEWS END
 
 // // PREMIUM FEATURES START
@@ -57,6 +60,12 @@ import { footerCompany } from './components/footer.js';
 // FOOTER END
 
 // COMPONENTS EXECUTION
+new Carousel ({
+    data: customerReviewsData,
+    renderEngine: CustomerReviews,
+    breakpoints: [800, 1100] 
+})
+socials('.socials', socialsLogoData);
 header(".links", headerData);
 sidemenu(".sideLinks", headerData);
 squares('.squares', squaresData);
