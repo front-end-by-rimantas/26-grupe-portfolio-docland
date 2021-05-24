@@ -133,6 +133,7 @@
 @media (max-width: 1200px) {
   .hero-container {
     width: 100%;
+    padding: 30px;
   }
   .hero-container > .hero-img {
     width: 530px;

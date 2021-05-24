@@ -11,14 +11,16 @@ function solutionBox(selector, data){
         <div class= "logo-box"; style="background-color:${item.logoBg};">
               <img src="${item.logoName}${num}.svg" class="solution-logo" style="color:${item.logoColor};">
         </div>
-    <h3 href ="${item.link}" class=solution-header>${item.headerText}</h3>
+    <h3 class=solution-header><a class='btn btn-link' href='${item.link}'> ${item.headerText}</a></h3>
     <p class="solution-paragraph">${item.paraText}</p>
     </div> `
     }
     solutionDOM.innerHTML += HTML;
-
+   
     const solutionBoxDOM = solutionDOM.querySelectorAll('.solution-box');
     const logoDOM = solutionDOM.querySelectorAll('.solution-logo')
+    console.log(solutionBoxDOM);
+
 
     for (let i = 0; i < logoDOM.length; i++) {
         solutionBoxDOM[i].addEventListener('mouseover', ()=>{
