@@ -28,6 +28,8 @@ import { solutionData } from './data/solutionData.js';
 import { solutionBox} from './components/solutionBox.js'
 // SOLUTIONS END
 
+import './components/fixedIcon.js'
+
 // START-USING START
 import './components/start-using.js'
 // START-USING END

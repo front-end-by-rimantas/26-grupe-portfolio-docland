@@ -6,6 +6,7 @@
 /* 3rd-party */
 @import "./3rd-party/font-awesome.min.css";
 /* components */
+@import './components/logo-gallery.css';
 @import "./components/header.css";
 @import "./components/footer.css";
 @import "./components/hero.css";
@@ -15,4 +16,5 @@
 @import "./components/solutions.css";
 @import "./components/features.css";
 @import "./components/logo-gallery.css";
+@import './components/fixedIcon.css';
 /* CUSTOM STYLE BELOW */

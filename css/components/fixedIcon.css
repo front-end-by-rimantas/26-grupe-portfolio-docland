@@ -1,0 +1,48 @@
+.back-to-top {
+  background-color: var(--color-light-blue);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 5px 0px rgba(136, 136, 136, 0.75);
+  position: absolute;
+  opacity: 0;
+  transition: 0.3s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  right: 7%;
+
+}
+
+.back-to-top.show {
+  animation: drop 0.4s ease-in;
+  opacity: 1;
+  visibility: visible;
+  bottom: 10%;
+  z-index: 20;
+  position: fixed;
+}
+
+.back-to-top.show:hover {
+  opacity: 0.7;
+}
+
+i.fa.fa-angle-up {
+  font-size: 20px;
+  color: white;
+}
+
+@keyframes drop {
+  0% {
+    transform: scale(0);
+    bottom: 50%;
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    position: fixed;
+  }
+}
